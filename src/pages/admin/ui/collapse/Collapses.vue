@@ -3,22 +3,22 @@
     <div class="row">
       <div class="flex xs12">
         <va-card>
-          <va-card-title>{{ $t("collapse.basic") }}</va-card-title>
+          <va-card-title>{{ $t("capp.ollapse.basic") }}</va-card-title>
           <va-card-content>
             <va-accordion v-model="basicAccordionValue">
-              <va-collapse class="mb-4" :header="$t('collapse.firstHeader')">
+              <va-collapse class="mb-4" :header="$t('app.collapse.firstHeader')">
                 <div class="pa-3">
-                  <p class="display-3">{{ $t("collapse.content.title") }}</p>
+                  <p class="display-3">{{ $t("app.collapse.content.title") }}</p>
                   <div>
-                    {{ $t("collapse.content.text") }}
+                    {{ $t("app.collapse.content.text") }}
                   </div>
                 </div>
               </va-collapse>
-              <va-collapse :header="$t('collapse.secondHeader')">
+              <va-collapse :header="$t('app.collapse.secondHeader')">
                 <div class="pa-3">
                   <p class="display-3">{{ $t("collapse.content.title") }}</p>
                   <div>
-                    {{ $t("collapse.content.text") }}
+                    {{ $t("app.collapse.content.text") }}
                   </div>
                 </div>
               </va-collapse>
@@ -29,31 +29,31 @@
 
       <div class="flex xs12">
         <va-card>
-          <va-card-title>{{ $t("collapse.collapseWithBackground") }}</va-card-title>
+          <va-card-title>{{ $t("app.collapse.collapseWithBackground") }}</va-card-title>
           <va-card-content>
             <va-accordion v-model="colorAccordionValue">
               <va-collapse
                 class="mb-4"
-                :header="$t('collapse.firstHeader')"
+                :header="$t('app.collapse.firstHeader')"
                 color="success"
                 color-all
               >
                 <div class="pa-3">
-                  <p class="display-3">{{ $t("collapse.content.title") }}</p>
+                  <p class="display-3">{{ $t("app.collapse.content.title") }}</p>
                   <div>
-                    {{ $t("collapse.content.text") }}
+                    {{ $t("app.collapse.content.text") }}
                   </div>
                 </div>
               </va-collapse>
               <va-collapse
-                :header="$t('collapse.secondHeader')"
+                :header="$t('app.collapse.secondHeader')"
                 color="warning"
                 color-all
               >
                 <div class="pa-3">
-                  <p class="display-3">{{ $t("collapse.content.title") }}</p>
+                  <p class="display-3">{{ $t("app.collapse.content.title") }}</p>
                   <div>
-                    {{ $t("collapse.content.text") }}
+                    {{ $t("app.collapse.content.text") }}
                   </div>
                 </div>
               </va-collapse>
@@ -64,32 +64,32 @@
 
       <div class="flex xs12">
         <va-card>
-          <va-card-title>{{ $t("collapse.collapseWithCustomHeader") }}</va-card-title>
+          <va-card-title>{{ $t("app.collapse.collapseWithCustomHeader") }}</va-card-title>
           <va-card-content>
             <va-accordion v-model="customHeaderAccordionValue">
               <va-collapse class="mb-4">
                 <template #header>
                   <va-button style="width: 100%;">
-                    {{ $t("collapse.firstHeader") }}
+                    {{ $t("app.collapse.firstHeader") }}
                   </va-button>
                 </template>
                 <div class="pa-3">
                   <p class="display-3">{{ $t("collapse.content.title") }}</p>
                   <div>
-                    {{ $t("collapse.content.text") }}
+                    {{ $t("app.collapse.content.text") }}
                   </div>
                 </div>
               </va-collapse>
               <va-collapse>
                 <template #header>
                   <va-button style="width: 100%;">
-                    {{ $t("collapse.secondHeader") }}
+                    {{ $t("app.collapse.secondHeader") }}
                   </va-button>
                 </template>
                 <div>
-                  <p class="display-3">{{ $t("collapse.content.title") }}</p>
+                  <p class="display-3">{{ $t("capp.ollapse.content.title") }}</p>
                   <div class="pa-3">
-                    {{ $t("collapse.content.text") }}
+                    {{ $t("app.collapse.content.text") }}
                   </div>
                 </div>
               </va-collapse>

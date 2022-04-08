@@ -10,7 +10,7 @@
           <va-card class="mb-4" :color="info.color">
             <va-card-content>
               <p class="display-2 mb-0" style="color: white;">{{ info.value }}</p>
-              <p style="color: white;">{{$t('dashboard.info.' + info.text)}}</p>              
+              <p style="color: white;">{{$t('app.dashboard.info.' + info.text)}}</p>              
             </va-card-content>
           </va-card>
         </div>
@@ -21,7 +21,7 @@
           <va-card>
             <va-card-content>
               <p class="display-2 mb-1" :style="{color: theme.primary}">291</p>
-              <p class="no-wrap">{{$t('dashboard.info.completedPullRequests')}}</p>              
+              <p class="no-wrap">{{$t('app.dashboard.info.completedPullRequests')}}</p>              
             </va-card-content>
           </va-card>
         </div>
@@ -31,15 +31,15 @@
               <div class="row row-separated">
                 <div class="flex xs4">
                   <p class="display-2 mb-1 text--center" :style="{color: theme.primary}">3</p>
-                  <p class="text--center mb-1">{{$t('dashboard.info.users')}}</p>
+                  <p class="text--center mb-1">{{$t('app.dashboard.info.users')}}</p>
                 </div>
                 <div class="flex xs4">
                   <p class="display-2 mb-1 text--center" :style="{color: theme.info}">24</p>
-                  <p class="text--center no-wrap mb-1">{{$t('dashboard.info.points')}}</p>
+                  <p class="text--center no-wrap mb-1">{{$t('app.dashboard.info.points')}}</p>
                 </div>
                 <div class="flex xs4">
                   <p class="display-2 mb-1 text--center" :style="{color: theme.warning}">91</p>
-                  <p class="text--center mb-1">{{$t('dashboard.info.units')}}</p>
+                  <p class="text--center mb-1">{{$t('app.dashboard.info.units')}}</p>
                 </div>
               </div>
             </va-card-content>
@@ -52,7 +52,7 @@
     <div class="flex xs12 md6 xl3">
       <va-card stripe stripe-color="info"> 
         <va-card-title>
-          {{ $t('dashboard.info.componentRichTheme') }}
+          {{ $t('app.dashboard.info.componentRichTheme') }}
         </va-card-title>
         <va-card-content>
           <p class="rich-theme-card-text">
@@ -63,7 +63,7 @@
 
           <div class="mt-3">
             <va-button color="primary" target="_blank" href="https://github.com/epicmaxco/vuestic-ui">
-              {{$t('dashboard.info.viewLibrary')}}
+              {{$t('app.dashboard.info.viewLibrary')}}
             </va-button>
           </div>
         </va-card-content>
@@ -84,7 +84,7 @@
             class="ma-0"
             @click="showModal"
           >
-            {{$t('dashboard.info.exploreGallery')}}
+            {{$t('app.dashboard.info.exploreGallery')}}
           </va-button>
         </va-card-title>
       </va-card>
@@ -102,7 +102,7 @@
 </template>
 
 <script>
-import { useGlobalConfig } from 'vuestic-ui'
+// import { useGlobalConfig } from 'vuestic-ui'
 
 export default {
   name: 'DashboardInfoBlock',
@@ -126,13 +126,7 @@ export default {
       }],
       modal: false,
       currentImageIndex: 0,
-      images: [
-        'https://i.imgur.com/qSykGko.jpg',
-        'https://i.imgur.com/jYwT08D.png',
-        'https://i.imgur.com/9930myH.jpg',
-        'https://i.imgur.com/2JxhWD6.jpg',
-        'https://i.imgur.com/MpiOWbM.jpg',
-      ],
+      images: [],
     }
   },
   methods: {
@@ -148,7 +142,8 @@ export default {
   },
   computed: {
     theme() {
-      return useGlobalConfig().getGlobalConfig().colors || {}
+      return {}
+      // return useGlobalConfig().getGlobalConfig().colors || {}
     }
   }
 }

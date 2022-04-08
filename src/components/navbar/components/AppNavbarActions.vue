@@ -3,7 +3,7 @@
     <color-dropdown class="app-navbar-actions__item"/>
     <message-dropdown class="app-navbar-actions__item"/>
     <notification-dropdown class="app-navbar-actions__item"/>
-    <!-- <settings-dropdown class="app-navbar-actions__item" /> -->
+    <settings-dropdown class="app-navbar-actions__item" />
     <language-dropdown class="app-navbar-actions__item"/>
     <profile-dropdown class="app-navbar-actions__item app-navbar-actions__item--profile">
       <span>{{userName}}</span>
@@ -12,18 +12,18 @@
 </template>
 
 <script>
-import LanguageDropdown from './dropdowns/LanguageDropdown'
-import ProfileDropdown from './dropdowns/ProfileDropdown'
-import NotificationDropdown from './dropdowns/NotificationDropdown'
-import MessageDropdown from './dropdowns/MessageDropdown'
-import ColorDropdown from './dropdowns/color-dropdown/ColorDropdown'
-import SettingsDropdown from './dropdowns/SettingsDropdown'
+import LanguageDropdown from './dropdowns/LanguageDropdown.vue'
+import ProfileDropdown from './dropdowns/ProfileDropdown.vue'
+import NotificationDropdown from './dropdowns/NotificationDropdown.vue'
+import MessageDropdown from './dropdowns/MessageDropdown.vue'
+import ColorDropdown from './dropdowns/color-dropdown/ColorDropdown.vue'
+import SettingsDropdown from './dropdowns/SettingsDropdown.vue'
 
 export default {
   name: 'app-navbar-actions',
 
   components: {
-    // SettingsDropdown,
+    SettingsDropdown,
     ColorDropdown,
     MessageDropdown,
     NotificationDropdown,

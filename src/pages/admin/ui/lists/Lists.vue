@@ -5,7 +5,7 @@
         <va-card class="mb-4">
           <va-list>
             <va-list-label>
-              {{ $t('lists.customers') }}
+              {{ $t('app.lists.customers') }}
             </va-list-label>
 
             <template v-for="(customer, i) in customers" :key="'item' + customer.id">
@@ -39,7 +39,7 @@
         <va-card>
           <va-list>
             <va-list-label>
-              {{ $t('lists.recentMessages') }}
+              {{ $t('app.lists.recentMessages') }}
             </va-list-label>
 
             <template v-for="(customer, i) in customers" :key="'item' + customer.id">
@@ -74,7 +74,7 @@
             <va-list-separator fit spaced />
 
             <va-list-label color="gray">
-              {{ $t('lists.archieved') }}
+              {{ $t('app.lists.archieved') }}
             </va-list-label>
 
             <template v-for="(customer, i) in archived" :key="'item' + customer.id">
@@ -106,7 +106,7 @@
         <va-card class="mb-4">
           <va-list>
             <va-list-label>
-              {{ $t('lists.starterKit') }}
+              {{ $t('app.lists.starterKit') }}
             </va-list-label>
 
             <va-list-item class="ml-2" clickable>
@@ -136,7 +136,7 @@
             <va-list-separator fit spaced />
 
             <va-list-label>
-              {{ $t('lists.notifications') }}
+              {{ $t('app.lists.notifications') }}
             </va-list-label>
 
             <va-list-item>
@@ -182,7 +182,7 @@
         <va-card>
           <va-list>
             <va-list-label>
-              {{ $t('lists.routerSupport') }}
+              {{ $t('app.lists.routerSupport') }}
             </va-list-label>
 
             <va-list-item :to="{ name: 'google-maps' }">

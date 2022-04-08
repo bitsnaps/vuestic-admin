@@ -3,7 +3,7 @@
     <div class="row">
       <div class="flex xs12 md6">
         <va-card>
-          <va-card-title>{{ $t('popovers.popoverStyle') }}</va-card-title>
+          <va-card-title>{{ $t('app.popovers.popoverStyle') }}</va-card-title>
           <va-card-content>
             <va-select
               class="mb-4"
@@ -38,7 +38,7 @@
                 open
               >
                 <va-button>
-                  {{ $t('notificationsPage.popovers.showPopover') }}
+                  {{ $t('app.notificationsPage.popovers.showPopover') }}
                 </va-button>
               </va-popover>
             </div>
@@ -48,7 +48,7 @@
 
       <div class="flex xs12 md6">
         <va-card>
-          <va-card-title>{{ $t('popovers.popoverPlacement') }}</va-card-title>
+          <va-card-title>{{ $t('app.popovers.popoverPlacement') }}</va-card-title>
           <va-card-content>
             <p class="my-2 mx-2">
               Any text can be used for
@@ -57,7 +57,7 @@
                 message="Bottom tooltip"
               >
                 <a class="link">
-                  {{ $t('notificationsPage.popovers.bottomTooltip') }}
+                  {{ $t('app.notificationsPage.popovers.bottomTooltip') }}
                 </a>
               </va-popover>
               tooltip showcase. Just anything you can possibly imagine to test
@@ -66,7 +66,7 @@
                 message="Right tooltip"
               >
                 <a class="link">
-                  {{ $t('notificationsPage.popovers.rightTooltip') }}
+                  {{ $t('app.notificationsPage.popovers.rightTooltip') }}
                 </a>
               </va-popover>
               tooltip.
@@ -76,7 +76,7 @@
                 message="Left tooltip"
               >
                 <a class="link">
-                  {{$t('notificationsPage.popovers.leftTooltip')}}
+                  {{$t('app.notificationsPage.popovers.leftTooltip')}}
                 </a>
               </va-popover>
               .
@@ -86,7 +86,7 @@
                 message="Top tooltip"
               >
                 <a class="link">
-                  {{ $t('notificationsPage.popovers.topTooltip') }}
+                  {{ $t('app.notificationsPage.popovers.topTooltip') }}
                 </a>
               </va-popover>
               the item.

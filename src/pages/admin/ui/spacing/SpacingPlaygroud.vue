@@ -5,7 +5,7 @@
         <va-select
           :options="directionList"
           v-model="selectedMarginDirection"
-          :label="$t('spacingPlayground.margin')"
+          :label="$t('app.spacingPlayground.margin')"
           :max-height="null"
           no-clear
         />
@@ -14,7 +14,7 @@
         <va-select
           :options="sizesList"
           v-model="selectedMarginSize"
-          :label="$t('spacingPlayground.value')"
+          :label="$t('app.spacingPlayground.value')"
           :max-height="null"
           no-clear
         />
@@ -23,7 +23,7 @@
         <va-select
           :options="directionList"
           v-model="selectedPaddingDirection"
-          :label="$t('spacingPlayground.padding')"
+          :label="$t('app.spacingPlayground.padding')"
           :max-height="null"
           no-clear
         />
@@ -32,7 +32,7 @@
         <va-select
           :options="sizesList"
           v-model="selectedPaddingSize"
-          :label="$t('spacingPlayground.value')"
+          :label="$t('app.spacingPlayground.value')"
           :max-height="null"
           no-clear
         />
@@ -61,17 +61,17 @@
 
     <div class="row">
       <div class="flex xs12 sm6">
-        <color-presentation color="#ffd093" :name="$t('spacingPlayground.margin')"/>
+        <color-presentation color="#ffd093" :name="$t('app.spacingPlayground.margin')"/>
       </div>
       <div class="flex xs12 sm6">
-        <color-presentation color="#c9f7db" :name="$t('spacingPlayground.padding')"/>
+        <color-presentation color="#c9f7db" :name="$t('app.spacingPlayground.padding')"/>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import ColorPresentation from '../colors/color-presentation/ColorPresentation'
+import ColorPresentation from '../colors/color-presentation/ColorPresentation.vue'
 
 export default {
   name: 'spacing-playgroud',

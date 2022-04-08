@@ -20,11 +20,11 @@
       >
         <img v-if="option.details.avatar" class="mr-2 notification-dropdown__item__avatar" :src="option.details.avatar"/>
         <span class="ellipsis" style="max-width: 85%;">
-          <span class="text--bold" v-if="option.details.name">{{option.details.name}}</span> {{$t(`notifications.${option.name}`, { type: option.details.type })}}
+          <span class="text--bold" v-if="option.details.name">{{option.details.name}}</span> {{$t(`app.notifications.${option.name}`, { type: option.details.type })}}
         </span>
       </div>
       <div class="row justify--space-between mt-1">
-        <va-button class="md6 mr-2" size="small">{{ $t('notifications.all') }}</va-button>
+        <va-button class="md6 mr-2" size="small">{{ $t('app.notifications.all') }}</va-button>
         <va-button class="md6" size="small" outline @click="markAllAsRead" :disabled="allRead">{{ $t('notifications.mark_as_read') }}</va-button>
       </div>
     </va-dropdown-content>
@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import VaIconNotification from '@/components/icons/VaIconNotification'
+import VaIconNotification from '@/components/icons/VaIconNotification.vue'
 import { useGlobalConfig } from 'vuestic-ui'
 
 export default {

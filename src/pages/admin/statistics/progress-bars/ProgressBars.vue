@@ -24,13 +24,15 @@
 </template>
 
 <script>
-import HorizontalBars from './Widgets/HorizontalBars'
-import CircleBars from './Widgets/CircleBars'
-import BarsState from './Widgets/BarsState'
-import ColorfulBars from './Widgets/ColorfulBars'
+import HorizontalBars from './Widgets/HorizontalBars.vue'
+import CircleBars from './Widgets/CircleBars.vue'
+import BarsState from './Widgets/BarsState.vue'
+import ColorfulBars from './Widgets/ColorfulBars.vue'
 
 export default {
   name: 'progress-bars',
-  components: { HorizontalBars, CircleBars, BarsState, ColorfulBars },
+  components: {
+    HorizontalBars, CircleBars, BarsState, ColorfulBars 
+  },
 }
 </script>

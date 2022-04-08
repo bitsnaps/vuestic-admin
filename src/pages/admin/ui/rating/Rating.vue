@@ -3,7 +3,7 @@
     <div class="row">
       <div class="flex md6 xs12">
         <va-card>
-          <va-card-title>{{ $t('rating.singleIcon') }}</va-card-title>
+          <va-card-title>{{ $t('app.rating.singleIcon') }}</va-card-title>
           <va-card-content>
             <va-rating
               color="danger"
@@ -14,7 +14,7 @@
       </div>
       <div class="flex md6 xs12">
         <va-card>
-          <va-card-title>{{ $t('rating.twoIcons') }}</va-card-title>
+          <va-card-title>{{ $t('app.rating.twoIcons') }}</va-card-title>
           <va-card-content>
             <va-rating
               v-model="value"
@@ -26,7 +26,7 @@
       </div>
       <div class="flex md6 xs12">
         <va-card>
-          <va-card-title>{{ $t('rating.small') }}</va-card-title>
+          <va-card-title>{{ $t('app.rating.small') }}</va-card-title>
           <va-card-content>
             <va-rating
               size="small"
@@ -38,7 +38,7 @@
       </div>
       <div class="flex md6 xs12">
         <va-card>
-          <va-card-title>{{ $t('rating.large') }}</va-card-title>
+          <va-card-title>{{ $t('app.rating.large') }}</va-card-title>
           <va-card-content>
             <va-rating
               v-model="value"
@@ -50,7 +50,7 @@
       </div>
       <div class="flex md6 xs12">
         <va-card>
-          <va-card-title>{{ $t('rating.numbers') }}</va-card-title>
+          <va-card-title>{{ $t('app.rating.numbers') }}</va-card-title>
           <va-card-content>
             <va-rating
               numbers
@@ -61,7 +61,7 @@
       </div>
       <div class="flex md6 xs12">
         <va-card>
-          <va-card-title>{{ $t('rating.halves') }}</va-card-title>
+          <va-card-title>{{ $t('app.rating.halves') }}</va-card-title>
           <va-card-content>
             <va-rating
               color="warning"

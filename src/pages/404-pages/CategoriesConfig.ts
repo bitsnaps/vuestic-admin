@@ -8,19 +8,19 @@ export default [
       },
     ],
   },
-  {
-    categoryName: 'Statistics',
-    items: [
-      {
-        itemName: 'Charts',
-        itemLink: '/admin/statistics/charts',
-      },
-      {
-        itemName: 'Progress bars',
-        itemLink: '/admin/statistics/progress-bars',
-      },
-    ],
-  },
+  // {
+  //   categoryName: 'Statistics',
+  //   items: [
+  //     {
+  //       itemName: 'Charts',
+  //       itemLink: '/admin/statistics/charts',
+  //     },
+  //     {
+  //       itemName: 'Progress bars',
+  //       itemLink: '/admin/statistics/progress-bars',
+  //     },
+  //   ],
+  // },
   {
     categoryName: 'Forms',
     items: [
@@ -54,10 +54,10 @@ export default [
         itemName: 'Typography',
         itemLink: '/admin/ui/typography',
       },
-      {
-        itemName: 'Buttons',
-        itemLink: '/admin/ui/buttons',
-      },
+      // {
+      //   itemName: 'Buttons',
+      //   itemLink: '/admin/ui/buttons',
+      // },
       {
         itemName: 'Cards',
         itemLink: '/admin/ui/cards',

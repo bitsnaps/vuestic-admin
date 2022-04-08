@@ -2,15 +2,15 @@
   <div class="va-page-not-found justify--center pb-5" :style="pageNotFoundStyle" v-bind="$attrs">
     <div class="va-page-not-found__inner align--center">
       <slot name="image"/>
-      <div class="va-page-not-found__title text--center mb-4">{{$t('404.title')}}</div>
+      <div class="va-page-not-found__title text--center mb-4">{{$t('app.app.404.title')}}</div>
       <div class="va-page-not-found__text px-4 text--center">
         <span>
-          {{$t('404.text')}}
+          {{$t('app.404.text')}}
         </span>
         <a href="mailto:hello@epicmax.co" :style="{color: theme.primary}" class="link">hello@epicmax.co</a>
       </div>
       <slot/>
-      <!-- <va-button v-if="!withoutButton" :to="{ name: 'dashboard' }">{{$t('404.back_button')}}</va-button> -->
+      <!-- <va-button v-if="!withoutButton" :to="{ name: 'dashboard' }">{{$t('app.404.back_button')}}</va-button> -->
     </div>
     <made-by-component/>
     <div class="va-page-not-found__wallpaper">

@@ -1,31 +1,31 @@
 <template>
   <div class="dashboard">
-    <dashboard-charts />
+    <!-- <dashboard-charts /> -->
     <dashboard-info-block />
     <div class="row row-equal">
       <div class="flex xs12 lg6">
         <dashboard-tabs @submit="addAddressToMap"/>
       </div>
       <div class="flex xs12 lg6">
-        <dashboard-map ref="dashboardMap"/>
+        <!-- <dashboard-map ref="dashboardMap"/> -->
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import DashboardCharts from './DashboardCharts'
-import DashboardInfoBlock from './DashboardInfoBlock'
-import DashboardTabs from './DashboardTabs'
-import DashboardMap from './DashboardMap'
+// import DashboardCharts from './DashboardCharts.vue'
+import DashboardInfoBlock from './DashboardInfoBlock.vue'
+import DashboardTabs from './DashboardTabs.vue'
+// import DashboardMap from './DashboardMap.vue'
 
 export default {
   name: 'dashboard',
   components: {
-    DashboardCharts,
+    // DashboardCharts,
     DashboardInfoBlock,
     DashboardTabs,
-    DashboardMap,
+    // DashboardMap,
   },
   methods: {
     addAddressToMap ({ city, country }) {

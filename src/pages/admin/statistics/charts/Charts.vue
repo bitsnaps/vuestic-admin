@@ -4,7 +4,7 @@
       <div class="flex md6 xs12">
         <va-card
           class="chart-widget"
-          :title="$t('charts.verticalBarChart')"
+          :title="$t('app.charts.verticalBarChart')"
         >
           <va-card-content>
             <va-chart :data="verticalBarChartData" type="vertical-bar"/>
@@ -14,7 +14,7 @@
       <div class="flex md6 xs12">
         <va-card
           class="chart-widget"
-          :title="$t('charts.horizontalBarChart')"
+          :title="$t('app.charts.horizontalBarChart')"
         >
           <va-card-content>
             <va-chart :data="horizontalBarChartData" type="horizontal-bar"/>
@@ -27,7 +27,7 @@
       <div class="flex md12 xs12">
         <va-card
           class="chart-widget"
-          :title="$t('charts.lineChart')"
+          :title="$t('app.charts.lineChart')"
         >
           <va-card-content>
             <va-chart :data="lineChartData" type="line"/>
@@ -40,7 +40,7 @@
       <div class="flex md6 xs12">
         <va-card
           class="chart-widget"
-          :title="$t('charts.pieChart')"
+          :title="$t('app.charts.pieChart')"
         >
           <va-card-content>
             <va-chart :data="pieChartData" type="pie"/>
@@ -50,7 +50,7 @@
       <div class="flex md6 xs12">
         <va-card
           class="chart-widget"
-          :title="$t('charts.donutChart')"
+          :title="$t('app.charts.donutChart')"
         >
           <va-card-content>
             <va-chart :data="donutChartData" type="donut"/>
@@ -62,7 +62,7 @@
       <div class="flex md12 xs12">
         <va-card
           class="chart-widget"
-          :title="$t('charts.bubbleChart')"
+          :title="$t('app.charts.bubbleChart')"
         >
           <va-card-content>
             <va-chart :data="bubbleChartData" type="bubble"/>
@@ -74,7 +74,7 @@
 </template>
 
 <script>
-import VaChart from '@/components/va-charts/VaChart'
+import VaChart from '@/components/va-charts/VaChart.vue'
 import { getLineChartData } from '@/data/charts/LineChartData'
 import { getBubbleChartData } from '@/data/charts/BubbleChartData'
 import { getPieChartData } from '@/data/charts/PieChartData'
@@ -85,7 +85,9 @@ import { useGlobalConfig } from 'vuestic-ui'
 
 export default {
   name: 'charts',
-  components: { VaChart },
+  components: {
+    VaChart 
+  },
   data () {
     return {
       bubbleChartData: null,

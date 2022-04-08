@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import ColorPresentation from './ColorPresentation'
+import ColorPresentation from './ColorPresentation.vue'
 
 export default {
   components: {

@@ -3,7 +3,7 @@
     <div class="row">
       <div class="flex xs12">
         <va-card>
-          <va-card-title>{{ $t('fileUpload.advancedMediaGallery') }}</va-card-title>
+          <va-card-title>{{ $t('app.fileUpload.advancedMediaGallery') }}</va-card-title>
           <va-card-content>
             <va-file-upload
               type="gallery"
@@ -16,7 +16,7 @@
       </div>
       <div class="flex xs12">
         <va-card>
-          <va-card-title>{{ $t('fileUpload.advancedUploadList') }}</va-card-title>
+          <va-card-title>{{ $t('app.fileUpload.advancedUploadList') }}</va-card-title>
           <va-card-content>
             <va-file-upload
               dropzone
@@ -27,7 +27,7 @@
       </div>
       <div class="flex xs12">
         <va-card>
-          <va-card-title>{{ $t('fileUpload.single') }}</va-card-title>
+          <va-card-title>{{ $t('app.fileUpload.single') }}</va-card-title>
           <va-card-content>
             <va-file-upload
               type="single"
@@ -38,7 +38,7 @@
       </div>
       <div class="flex xs12">
         <va-card>
-          <va-card-title>{{ $t('fileUpload.mediaGallery') }}</va-card-title>
+          <va-card-title>{{ $t('app.fileUpload.mediaGallery') }}</va-card-title>
           <va-card-content>
             <va-file-upload
               type="gallery"
@@ -50,7 +50,7 @@
       </div>
       <div class="flex xs12">
         <va-card>
-          <va-card-title>{{ $t('fileUpload.uploadList') }}</va-card-title>
+          <va-card-title>{{ $t('app.fileUpload.uploadList') }}</va-card-title>
           <va-card-content>
             <va-file-upload
               v-model="list"

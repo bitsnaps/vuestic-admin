@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import GoogleMap from './GoogleMap'
+import GoogleMap from './GoogleMap.vue'
 
 export default {
   name: 'google-maps-page',

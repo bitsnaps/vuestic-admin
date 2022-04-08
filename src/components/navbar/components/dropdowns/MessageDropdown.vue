@@ -20,10 +20,10 @@
         @click="option.unread = false"
       >
         <img :src="option.details.avatar" class="message-dropdown__item__avatar mr-2"/>
-        <span class="ellipsis" style="max-width: 85%;">{{ $t(`messages.${option.name}`, { name: option.details.name})}}</span>
+        <span class="ellipsis" style="max-width: 85%;">{{ $t(`app.messages.${option.name}`, { name: option.details.name})}}</span>
       </div>
       <div class="row justify--space-between mt-1">
-        <va-button class="md6 mr-2" size="small">{{ $t('messages.all') }}</va-button>
+        <va-button class="md6 mr-2" size="small">{{ $t('app.messages.all') }}</va-button>
         <va-button class="md6" size="small" outline @click="markAllAsRead" :disabled="allRead">{{ $t('messages.mark_as_read') }}</va-button>
       </div>
     </va-dropdown-content>
@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import VaIconMessage from '@/components/icons/VaIconMessage'
+import VaIconMessage from '@/components/icons/VaIconMessage.vue'
 import { useGlobalConfig } from 'vuestic-ui'
 
 export default {

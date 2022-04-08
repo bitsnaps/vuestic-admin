@@ -16,7 +16,7 @@
       </template>
       <template v-slot:center>
         <span class="app-navbar__text">
-          {{$t('navbar.messageUs')}}&nbsp;
+          {{$t('app.navbar.messageUs')}}&nbsp;
           <a
             href="mailto:hello@epicmax.co"
             target="_blank"
@@ -31,7 +31,7 @@
             icon="github"
             target="_blank"
           >
-            {{$t('navbar.repository')}}
+            {{$t('app.navbar.repository')}}
           </va-button>
         </span>
       </template>
@@ -49,12 +49,16 @@
 import { useColors } from 'vuestic-ui'
 import { useStore } from 'vuex'
 import { computed } from 'vue'
-import VuesticLogo from '@/components/vuestic-logo'
-import VaIconMenuCollapsed from '@/components/icons/VaIconMenuCollapsed'
-import AppNavbarActions from './components/AppNavbarActions'
+import VuesticLogo from '@/components/vuestic-logo.vue'
+import VaIconMenuCollapsed from '@/components/icons/VaIconMenuCollapsed.vue'
+import AppNavbarActions from './components/AppNavbarActions.vue'
 
 export default {
-  components: { VuesticLogo, AppNavbarActions, VaIconMenuCollapsed },
+  components: { 
+    VuesticLogo, 
+    AppNavbarActions, 
+    VaIconMenuCollapsed 
+    },
   setup() {
     const { getColors } = useColors()
     const colors = computed(() => getColors() )

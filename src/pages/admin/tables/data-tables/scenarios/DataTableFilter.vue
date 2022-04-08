@@ -1,10 +1,10 @@
 <template>
-  <va-card :title="$t('tables.searchTrendsBadges')">
+  <va-card :title="$t('app.tables.searchTrendsBadges')">
     <div class="row align--center">
       <div class="flex xs12 md6">
         <va-input
           :value="term"
-          :placeholder="$t('tables.searchByName')"
+          :placeholder="$t('app.tables.searchByName')"
           @input="search"
           removable
         >
@@ -17,7 +17,7 @@
       <div class="flex xs12 md3 offset--md3">
         <va-select
           v-model="perPage"
-          :label="$t('tables.perPage')"
+          :label="$t('app.tables.perPage')"
           :options="perPageOptions"
           noClear
         />
@@ -43,7 +43,7 @@
 
       <template #actions="props">
         <va-button v-if="props.rowData.hasReport" small color="danger" class="ma-0">
-          {{ $t('tables.report') }}
+          {{ $t('app.tables.report') }}
         </va-button>
       </template>
     </va-data-table>
@@ -51,7 +51,7 @@
 </template>
 
 <script>
-import { debounce } from 'lodash'
+// import { debounce } from 'lodash'
 import users from '../data/users.json'
 
 export default {
@@ -123,9 +123,12 @@ export default {
     showUser (user) {
       alert(JSON.stringify(user))
     },
-    search: debounce(function (term) {
+    search: (term) => {
       this.term = term
-    }, 400),
+    },
+    // search: debounce(function (term) {
+    //   this.term = term
+    // }, 400),
   },
 }
 </script>

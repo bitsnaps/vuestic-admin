@@ -12,14 +12,14 @@
       <va-card-content class="row">
         <div class="flex md3 xs12">
           <va-button outline :to="{ name: 'icon-sets' }">
-            {{ $t('icons.back') }}
+            {{ $t('app.icons.back') }}
           </va-button>
         </div>
 
         <div class="flex md5 xs12 flex-center">
           <va-input
             v-model="search"
-            :label="$t('icons.search')"
+            :label="$t('app.icons.search')"
             class="mb-0"
             style="max-width: 300px;"
             removable
@@ -66,7 +66,7 @@
       </va-card-title>
       <va-card-content class="row">
         <span v-if="list.icons.length === 0">
-          {{ $t('icons.none') }}
+          {{ $t('app.icons.none') }}
         </span>
         <div
           class="flex flex-center xs3 md1 mb-2 icon-grid-container"

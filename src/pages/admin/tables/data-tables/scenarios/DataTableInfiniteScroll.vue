@@ -1,5 +1,5 @@
 <template>
-  <va-card :title="$t('tables.infiniteScroll')">
+  <va-card :title="$t('app.tables.infiniteScroll')">
     <div class="data-table-infinite-scroll--container" ref="scrollable" @scroll="onScroll">
       <va-data-table
         :fields="fields"
@@ -13,25 +13,25 @@
       </va-data-table>
 
       <div class="flex-center ma-3">
-        <spring-spinner
+        <!-- <spring-spinner
           v-if="loading"
           :animation-duration="2000"
           :size="60"
           :color="theme.primary"
-        />
+        /> -->
       </div>
     </div>
   </va-card>
 </template>
 
 <script>
-import { SpringSpinner } from 'epic-spinners'
+// import { SpringSpinner } from 'epic-spinners'
 import users from '../data/users.json'
 import { useGlobalConfig } from 'vuestic-ui'
 
 export default {
   components: {
-    SpringSpinner,
+    // SpringSpinner,
   },
   data () {
     return {

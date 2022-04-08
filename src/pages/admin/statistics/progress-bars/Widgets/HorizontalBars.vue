@@ -1,7 +1,7 @@
 <template>
   <va-card
     class="horizontal-bars"
-    :title="$t('progressBars.horizontal')"
+    :title="$t('app.progressBars.horizontal')"
   >
     <va-card-content class="row">
       <div class="flex md4 xs12">

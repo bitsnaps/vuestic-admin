@@ -15,7 +15,7 @@
 
     <va-dropdown-content class="settings-dropdown__content pl-4 pr-4 pt-2 pb-2">
       <div class="settings-dropdown__content-label mt-2 mb-3" :style="{color: theme.primary}">
-        {{$t('dashboard.navigationLayout')}}
+        {{$t('app.dashboard.navigationLayout')}}
       </div>
       <va-button-toggle
         outline
@@ -39,8 +39,8 @@ export default {
   data () {
     return {
       options: [
-        { label: this.$t('dashboard.sideBarButton'), value: String(false) }, // NOTE: boolean is unsupported for va-dropdown
-        { label: this.$t('dashboard.topBarButton'), value: String(true) },
+        { label: this.$t('app.dashboard.sideBarButton'), value: String(false) }, // NOTE: boolean is unsupported for va-dropdown
+        { label: this.$t('app.dashboard.topBarButton'), value: String(true) },
       ],
     }
   },

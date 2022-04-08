@@ -10,14 +10,14 @@ export default {
       path: 'typography',
       component: () => import('@/pages/admin/ui/typography/Typography.vue'),
     },
-    {
-      name: 'buttons',
-      path: 'buttons',
-      component: () => import('@/pages/admin/ui/buttons/Buttons.vue'),
-      meta: {
-        wikiLink: 'https://github.com/epicmaxco/vuestic-admin/wiki/Buttons',
-      },
-    },
+    // {
+    //   name: 'buttons',
+    //   path: 'buttons',
+    //   component: () => import('@/pages/admin/ui/buttons/Buttons.vue'),
+    //   meta: {
+    //     wikiLink: 'https://github.com/epicmaxco/vuestic-admin/wiki/Buttons',
+    //   },
+    // },
     {
       name: 'rating',
       path: 'rating',

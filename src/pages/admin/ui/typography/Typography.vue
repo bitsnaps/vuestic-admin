@@ -3,7 +3,7 @@
     <div class="row">
       <div class="flex xs12">
         <va-card>
-          <va-card-title>{{ $t('typography.primary') }}</va-card-title>
+          <va-card-title>{{ $t('app.typography.primary') }}</va-card-title>
           <va-card-content>
             <div class="mb-4">
               <h1>Display 1 Heading</h1>
@@ -69,7 +69,7 @@
       </div>
       <div class="flex xs12">
         <va-card>
-          <va-card-title>{{ $t('typography.secondary') }}</va-card-title>
+          <va-card-title>{{ $t('app.typography.secondary') }}</va-card-title>
           <va-card-content>
             <p class="display-3">Lists</p>
             <ol class="va-ordered">

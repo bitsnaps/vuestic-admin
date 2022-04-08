@@ -55,7 +55,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
-@import "~medium-editor/src/sass/medium-editor";
+@import "medium-editor/src/sass/medium-editor.scss";
 @import 'variables';
 
 $medium-editor-shadow: var(--va-box-shadow);

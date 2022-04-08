@@ -1,5 +1,5 @@
 <template>
-  <va-card :title="$t('tables.serverSidePagination')">
+  <va-card :title="$t('app.tables.serverSidePagination')">
     <va-data-table
       :fields="fields"
       :data="items"
@@ -18,6 +18,10 @@
 <script>
 import axios from 'axios'
 
+// const USERS_API = 'https://reqres.in/api/users'
+// use: json-server src/pages/admin/tables/data-tables/data/users-watch.json -p 5000
+const USERS_API = 'http://localhost:5000/users'
+
 export default {
   data () {
     return {
@@ -34,15 +38,15 @@ export default {
         width: '60px',
       }, {
         name: 'first_name',
-        title: this.$t('tables.headings.firstName'),
+        title: this.$t('app.tables.headings.firstName'),
         width: '20%',
       }, {
         name: 'last_name',
-        title: this.$t('tables.headings.lastName'),
+        title: this.$t('app.tables.headings.lastName'),
         width: '20%',
       }, {
         name: 'email',
-        title: this.$t('tables.headings.email'),
+        title: this.$t('app.tables.headings.email'),
       }]
     },
   },
@@ -58,10 +62,11 @@ export default {
         page: page,
       }
 
-      axios.get('https://reqres.in/api/users', { params })
+      axios.get(USERS_API, { params })
         .then(response => {
-          this.items = response.data.data
-          this.totalPages = response.data.total_pages
+          this.items = response.data//.data
+          // this.totalPages = response.data.total_pages
+          this.totalPages = response.data.length / this.perPage
           this.loading = false
         })
     },

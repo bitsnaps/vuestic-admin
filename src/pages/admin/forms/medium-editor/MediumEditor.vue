@@ -3,7 +3,7 @@
     <div class="row">
       <div class="flex md12">
         <va-card>
-          <va-card-title>{{ $t('forms.mediumEditor.title') }}</va-card-title>
+          <va-card-title>{{ $t('app.forms.mediumEditor.title') }}</va-card-title>
           <va-card-content class="d-flex flex-center">
             <va-medium-editor
               @initialized="handleEditorInitialization"
@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import VaMediumEditor from '@/components/va-medium-editor/va-medium-editor'
+import VaMediumEditor from '@/components/va-medium-editor/va-medium-editor.vue'
 
 export default {
   components: {

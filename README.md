@@ -1,3 +1,14 @@
+<p>
+This branch uses Vite, TypeScript and Vue3, so the build experience is really fast.
+</p>
+<p>some known issues are:</p>
+<ul>
+  <li>The `epic-spinners` dependency fully compatible with Vue3 yet... so it's not included here.</li>
+  <li>You can't import json files using `require` in your code because this requires to include some plugins (e.g. `vite-plugin-commonjs`...), and this cause build issues, as an alternative we import TypeScript object module instead of json.</li>
+  <li></li>
+</ul>
+
+
 <p align="center">
   <a href="https://vuestic.dev" target="_blank">
     <img alt="Vuestic UI Logo" width="500" src="./public/img/vuestic-admin-logo.png">

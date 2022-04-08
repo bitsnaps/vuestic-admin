@@ -1,6 +1,6 @@
 <template>
   <va-card class="d-flex dashboard-contributors-list">
-    <va-card-title>
+    <!-- <va-card-title>
       <h1>{{ $t('dashboard.charts.topContributors') }}</h1>
       <div class="mr-0 text-right">
         <a
@@ -29,7 +29,7 @@
           <p class="mt-2">{{ contributor.login }}</p>
         </div>
       </va-inner-loading>
-    </va-card-content>
+    </va-card-content> -->
   </va-card>
 </template>
 
@@ -50,7 +50,7 @@ export default {
     }
   },
   mounted () {
-    this.loadContributorsList()
+    // this.loadContributorsList()
   },
   computed: {
     theme() {
@@ -58,38 +58,38 @@ export default {
     }
   },
   methods: {
-    async loadContributorsList () {
-      this.loading = true
-      const { data } = await axios.get('https://api.github.com/repos/epicmaxco/vuestic-admin/contributors')
-      this.contributors = data
-      this.progressMax = Math.max(...this.contributors.map(({ contributions }) => contributions))
-      this.showNext()
-      this.loading = false
-    },
-    getPercent (val) {
-      return (val / this.progressMax) * 100
-    },
-    showNext () {     
-      this.visibleList = this.contributors.slice(this.page * this.step, this.page * this.step + this.step)
-      this.page += 1
+    // async loadContributorsList () {
+    //   this.loading = true
+    //   const { data } = await axios.get('https://api.github.com/repos/epicmaxco/vuestic-admin/contributors')
+    //   this.contributors = data
+    //   this.progressMax = Math.max(...this.contributors.map(({ contributions }) => contributions))
+    //   this.showNext()
+    //   this.loading = false
+    // },
+    // getPercent (val) {
+    //   return (val / this.progressMax) * 100
+    // },
+    // showNext () {     
+    //   this.visibleList = this.contributors.slice(this.page * this.step, this.page * this.step + this.step)
+    //   this.page += 1
 
-      const maxPages = (this.contributors.length - 1) / this.step
+    //   const maxPages = (this.contributors.length - 1) / this.step
 
-      if (this.page > maxPages) {
-        this.page = 0
-      }
-    },
-    getProgressBarColor (idx) {
-      const themeColors = ["primary", "success", "info", "danger", "warning"]
+    //   if (this.page > maxPages) {
+    //     this.page = 0
+    //   }
+    // },
+    // getProgressBarColor (idx) {
+    //   const themeColors = ["primary", "success", "info", "danger", "warning"]
 
-      if (idx < themeColors.length) {
-        return themeColors[idx]
-      }
+    //   if (idx < themeColors.length) {
+    //     return themeColors[idx]
+    //   }
 
-      // Get random color if idx out of colors array
-      const keys = Object.keys(themeColors)
-      return themeColors[keys[keys.length * Math.random() << 0]]
-    },
+    //   // Get random color if idx out of colors array
+    //   const keys = Object.keys(themeColors)
+    //   return themeColors[keys[keys.length * Math.random() << 0]]
+    // },
   },
 }
 </script>

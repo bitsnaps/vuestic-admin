@@ -4,7 +4,7 @@ export default createStore({
   strict: true, // process.env.NODE_ENV !== 'production',
   state: {
     isSidebarMinimized: false,
-    userName: 'Vasili S'
+    userName: 'Admin'
   },
   mutations: {
     updateSidebarCollapsedState(state, isSidebarMinimized) {
@@ -14,4 +14,8 @@ export default createStore({
       state.userName = newUserName
     }
   },
+  actions: {
+  },
+  modules: {
+  }
 })

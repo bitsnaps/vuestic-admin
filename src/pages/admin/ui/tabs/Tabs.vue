@@ -2,7 +2,7 @@
   <div class="grid row">
     <div class="flex xs12 md6">
       <va-card class="fill-height" style="overflow-x: auto;">
-        <va-card-title>{{ $t('tabs.alignment') }}</va-card-title>
+        <va-card-title>{{ $t('app.tabs.alignment') }}</va-card-title>
         <va-card-content>
           <div class="row">
             <div class="flex xs12">
@@ -49,7 +49,7 @@
       <div class="row column">
         <div class="flex">
           <va-card>
-            <va-card-title>{{ $t('tabs.overflow') }}</va-card-title>
+            <va-card-title>{{ $t('app.tabs.overflow') }}</va-card-title>
             <va-card-content>
               <div class="row">
                 <div class="flex xs12">
@@ -73,7 +73,7 @@
         </div>
         <div class="flex">
           <va-card>
-            <va-card-title>{{ $t('tabs.hidden') }}</va-card-title>
+            <va-card-title>{{ $t('app.tabs.hidden') }}</va-card-title>
             <va-card-content>
               <div class="row">
                 <div class="flex xs12">
@@ -97,7 +97,7 @@
 
     <div class="flex xs12">
       <va-card style="overflow-x: auto;">
-        <va-card-title>{{ $t('tabs.grow') }}</va-card-title>
+        <va-card-title>{{ $t('app.tabs.grow') }}</va-card-title>
         <va-card-content>
           <div class="row">
             <div class="flex xs12">

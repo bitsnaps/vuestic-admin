@@ -26,8 +26,8 @@
 
 <script>
 import { useColors } from 'vuestic-ui'
-import VaIconColor from '@/components/icons/VaIconColor'
-import ColorDropdownItem from './ColorDropdownItem'
+import VaIconColor from '@/components/icons/VaIconColor.vue'
+import ColorDropdownItem from './ColorDropdownItem.vue'
 import { computed, onMounted } from 'vue'
 import { THEME_NAMES, useTheme } from '@/services/vuestic-ui/themes'
 import { useRouter } from 'vue-router'

@@ -1,19 +1,19 @@
 <template>
   <va-card>
     <va-card-title>
-      {{ $t('dashboard.setupRemoteConnections') }}
+      {{ $t('app.dashboard.setupRemoteConnections') }}
     </va-card-title>
     <va-card-content>
       <va-tabs grow v-model="activeTabName">
         <template #tabs>
           <va-tab name="OverviewTab">
-            {{$t('dashboard.tabs.overview.title')}}
+            {{$t('app.dashboard.tabs.overview.title')}}
           </va-tab>
           <va-tab name="BillingAddressTab">
-            {{$t('dashboard.tabs.billingAddress.title')}}
+            {{$t('app.dashboard.tabs.billingAddress.title')}}
           </va-tab>
           <va-tab name="BankDetailsTab">
-            {{$t('dashboard.tabs.bankDetails.title')}}
+            {{$t('app.dashboard.tabs.bankDetails.title')}}
           </va-tab>
         </template>
       </va-tabs>
@@ -24,16 +24,16 @@
 </template>
 
 <script>
-import OverviewTab from './dashboard-tabs/OverviewTab'
-import BillingAddressTab from './dashboard-tabs/BillingAddressTab'
-import BankDetailsTab from './dashboard-tabs/BankDetailsTab'
+// import OverviewTab from './dashboard-tabs/OverviewTab'
+// import BillingAddressTab from './dashboard-tabs/BillingAddressTab'
+// import BankDetailsTab from './dashboard-tabs/BankDetailsTab'
 
 export default {
   name: 'DashboardTabs',
   components: {
-    OverviewTab,
-    BillingAddressTab,
-    BankDetailsTab,
+    // OverviewTab,
+    // BillingAddressTab,
+    // BankDetailsTab,
   },
   data () {
     return {
@@ -47,7 +47,7 @@ export default {
   },
   methods: {
     submit (data) {
-      this.$emit('submit', data)
+      // this.$emit('submit', data)
     },
   },
 }

@@ -17,7 +17,7 @@
       >
         <va-icon :name="flagIcon(option.code, 'small')"/>
         <span class="dropdown-item__text">
-          {{ $t(`language.${option.name}`) }}
+          {{ $t(`app.language.${option.name}`) }}
         </span>
       </div>
     </va-dropdown-content>
@@ -39,25 +39,13 @@ export default {
       type: Array,
       default: () => [
         {
-          code: 'gb',
+          code: 'en',
           name: 'english',
         },
         {
-          code: 'es',
-          name: 'spanish',
-        },
-        {
-          code: 'br',
-          name: 'brazilian_portuguese',
-        },
-        {
-          code: 'cn',
-          name: 'simplified_chinese',
-        },
-        {
-          code: 'ir',
-          name: 'persian',
-        },
+          code: 'fr',
+          name: 'french',
+        }
       ],
     },
   },
@@ -71,14 +59,14 @@ export default {
     },
 
     flagIcon(code, size) {
-      return `flag-icon-${code} ${size}`
+      return `flag-icon-${code === 'en'? 'gb': code} ${size}`
     }
   },
 }
 </script>
 
 <style lang="scss">
-@import "~flag-icon-css/css/flag-icon.css";
+@import "flag-icon-css/css/flag-icons.css";
 
 .language-dropdown {
   cursor: pointer;

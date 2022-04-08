@@ -1,9 +1,9 @@
 <template>
-  <va-card :title="$t('tables.emptyTable')">
+  <va-card :title="$t('app.tables.emptyTable')">
     <va-data-table
       :fields="fields"
       :data="data"
-      :no-data-label="$t('tables.noReport')"
+      :no-data-label="$t('app.tables.noReport')"
       no-pagination
     />
   </va-card>
@@ -20,13 +20,13 @@ export default {
     fields () {
       return [{
         name: 'fullName',
-        title: this.$t('tables.headings.name'),
+        title: this.$t('app.tables.headings.name'),
       }, {
         name: 'email',
-        title: this.$t('tables.headings.email'),
+        title: this.$t('app.tables.headings.email'),
       }, {
         name: 'country',
-        title: this.$t('tables.headings.country'),
+        title: this.$t('app.tables.headings.country'),
       }]
     },
   },

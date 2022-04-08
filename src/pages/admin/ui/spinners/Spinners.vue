@@ -1,7 +1,7 @@
 <template>
   <div class="spinners">
     <va-card>
-      <va-card-title>{{ $t('spinners.title') }}</va-card-title>
+      <va-card-title>{{ $t('app.spinners.title') }}</va-card-title>
       <va-card-content>
         <div class="row mt-0">
           <div class="d-flex flex xs12 lg4 align--center">
@@ -69,15 +69,15 @@
 </template>
 
 <script>
-import * as spinners from 'epic-spinners'
+// import * as spinners from 'epic-spinners'
 import { mapGetters } from 'vuex'
 import { useGlobalConfig, getColor } from 'vuestic-ui'
-import VaIconFaster from '../../../../components/icons/VaIconFaster'
-import VaIconSlower from '../../../../components/icons/VaIconSlower'
+import VaIconFaster from '../../../../components/icons/VaIconFaster.vue'
+import VaIconSlower from '../../../../components/icons/VaIconSlower.vue'
 
 export default {
   components: {
-    ...spinners,
+    // ...spinners,
     VaIconFaster,
     VaIconSlower,
   },

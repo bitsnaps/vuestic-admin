@@ -3,7 +3,7 @@
     <div class="row">
       <div class="flex xs12 md12">
         <va-card>
-          <va-card-title>{{ $t('chat.title') }}</va-card-title>
+          <va-card-title>{{ $t('app.chat.title') }}</va-card-title>
           <va-card-content>
             <chat v-model="chatMessages"/>
           </va-card-content>
@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import Chat from './Chat'
+import Chat from './Chat.vue'
 
 export default {
   name: 'chat-page',

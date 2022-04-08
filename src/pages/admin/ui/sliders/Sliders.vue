@@ -3,13 +3,13 @@
     <div class="row">
       <div class="flex md12">
         <va-card>
-          <va-card-title>{{ $t('sliders.slider') }}</va-card-title>
+          <va-card-title>{{ $t('app.sliders.slider') }}</va-card-title>
           <va-card-content class="row">
             <div class="flex xs12 lg6 xl4 mb-2">
               <div
                 class="title mb-3"
                 :style="{color: theme.primary}"
-              >{{$t('sliders.simple')}}</div>
+              >{{$t('app.sliders.simple')}}</div>
               <va-slider
                 v-model="value"
               />
@@ -18,7 +18,7 @@
               <div
                 class="title title--danger mb-3"
                 :style="{color: theme.danger}"
-              >{{$t('sliders.value')}}</div>
+              >{{$t('app.sliders.value')}}</div>
               <va-slider
                 color="danger"
                 value-visible
@@ -27,7 +27,7 @@
             </div>
             <div class="flex d-flex align--end xs12 lg6 xl4 mb-2">
               <va-slider
-                :label="$t('sliders.label')"
+                :label="$t('app.sliders.label')"
                 color="info"
                 value-visible
                 v-model="value"
@@ -35,7 +35,7 @@
             </div>
             <div class="flex d-flex align--end xs12 lg6 xl4 mb-2">
               <va-slider
-                :label="$t('sliders.label')"
+                :label="$t('app.sliders.label')"
                 :invert-label="true"
                 color="warning"
                 value-visible
@@ -46,7 +46,7 @@
               <div
                 class="title mb-3"
                 :style="{color: theme.primary}"
-              >{{$t('sliders.labelPlusIcon')}}</div>
+              >{{$t('app.sliders.labelPlusIcon')}}</div>
               <va-slider
                 icon="music"
                 v-model="value"
@@ -56,7 +56,7 @@
               <div
                 class="title title--danger mb-3"
                 :style="{color: theme.danger}"
-              >{{$t('sliders.labelPlusIcon')}}</div>
+              >{{$t('app.sliders.labelPlusIcon')}}</div>
               <va-slider
                 color="danger"
                 icon-right="check_circle"
@@ -68,7 +68,7 @@
               <div
                 class="title mb-3"
                 :style="{color: theme.primary}"
-              >{{$t('sliders.pins')}}</div>
+              >{{$t('app.sliders.pins')}}</div>
               <va-slider
                 pins
                 :step="20"
@@ -79,7 +79,7 @@
               <div
                 class="title title--warning mb-3"
                 :style="{color: theme.warning}"
-              >{{$t('sliders.pinsAndValue')}}</div>
+              >{{$t('app.sliders.pinsAndValue')}}</div>
               <va-slider
                 pins
                 :step="10"
@@ -108,13 +108,13 @@
       </div>
       <div class="flex md12">
         <va-card>
-          <va-card-title>{{ $t('sliders.range') }}</va-card-title>
+          <va-card-title>{{ $t('app.sliders.range') }}</va-card-title>
           <va-card-content class="row">
             <div class="flex xs12 lg6 xl4 mb-2">
               <div
                 class="title mb-3"
                 :style="{color: theme.primary}"
-              >{{$t('sliders.simple')}}</div>
+              >{{$t('app.sliders.simple')}}</div>
               <va-slider
                 range
                 v-model="value2"
@@ -124,7 +124,7 @@
               <div
                 class="title title--danger mb-3"
                 :style="{color: theme.danger}"
-              >{{$t('sliders.value')}}</div>
+              >{{$t('app.sliders.value')}}</div>
               <va-slider
                 range
                 color="danger"
@@ -135,7 +135,7 @@
             <div class="flex d-flex align--end xs12 lg6 xl4 mb-2">
               <va-slider
                 range
-                :label="$t('sliders.label')"
+                :label="$t('app.sliders.label')"
                 color="info"
                 value-visible
                 v-model="value2"
@@ -144,7 +144,7 @@
             <div class="flex d-flex align--end xs12 lg6 xl4 mb-2">
               <va-slider
                 range
-                :label="$t('sliders.label')"
+                :label="$t('app.sliders.label')"
                 :invert-label="true"
                 color="warning"
                 value-visible
@@ -155,7 +155,7 @@
               <div
                 class="title mb-3"
                 :style="{color: theme.primary}"
-              >{{$t('sliders.labelPlusIcon')}}</div>
+              >{{$t('app.sliders.labelPlusIcon')}}</div>
               <va-slider
                 range
                 icon="music"
@@ -166,7 +166,7 @@
               <div
                 class="title title--danger mb-3"
                 :style="{color: theme.danger}"
-              >{{$t('sliders.labelPlusIcon')}}</div>
+              >{{$t('app.sliders.labelPlusIcon')}}</div>
               <va-slider
                 range
                 color="danger"
@@ -179,7 +179,7 @@
               <div
                 class="title mb-3"
                 :style="{color: theme.primary}"
-              >{{$t('sliders.pins')}}</div>
+              >{{$t('app.sliders.pins')}}</div>
               <va-slider
                 range
                 pins
@@ -191,7 +191,7 @@
               <div
                 class="title title--warning mb-3"
                 :style="{color: theme.warning}"
-              >{{$t('sliders.pinsAndValue')}}</div>
+              >{{$t('app.sliders.pinsAndValue')}}</div>
               <va-slider
                 range
                 pins

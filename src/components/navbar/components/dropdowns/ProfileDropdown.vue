@@ -25,7 +25,7 @@
           :to="{name: option.redirectTo}"
           class="profile-dropdown__item"
         >
-          {{ $t(`user.${option.name}`) }}
+          {{ $t(`app.user.${option.name}`) }}
         </router-link>          
       </va-list-item>
     </va-dropdown-content>

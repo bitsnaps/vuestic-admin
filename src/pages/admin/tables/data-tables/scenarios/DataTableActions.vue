@@ -1,8 +1,8 @@
 <template>
-  <va-card :title="$t('tables.labelsActions')">
+  <va-card :title="$t('app.tables.labelsActions')">
     <va-data-table
       :fields="fields"
-      :data="users"
+      :data="userz"
       no-pagination
     >
       <template #marker="props">
@@ -11,15 +11,16 @@
 
       <template #actions="props">
         <va-button flat small color="gray" @click="edit(props.rowData)" class="ma-0">
-          {{ $t('tables.edit') }}
+          {{ $t('app.tables.edit') }}
         </va-button>
 
         <va-button flat small color="danger" @click="remove(props.rowData)" class="ma-0">
-          {{ $t('tables.delete') }}
+          {{ $t('app.tables.delete') }}
         </va-button>
       </template>
     </va-data-table>
   </va-card>
+
 </template>
 
 <script>
@@ -28,7 +29,7 @@ import users from '../data/users.json'
 export default {
   data () {
     return {
-      users: users.slice(0, 6),
+      users: users.slice(0, 6)
     }
   },
   computed: {
@@ -37,15 +38,16 @@ export default {
         name: '__slot:marker',
         width: '30px',
         dataClass: 'text-center',
-      }, {
+      },
+      {
         name: 'fullName',
-        title: this.$t('tables.headings.name'),
+        title: this.$t('app.tables.headings.name'),
       }, {
         name: 'email',
-        title: this.$t('tables.headings.email'),
+        title: this.$t('app.tables.headings.email'),
       }, {
         name: 'country',
-        title: this.$t('tables.headings.country'),
+        title: this.$t('app.tables.headings.country'),
       }, {
         name: '__slot:actions',
         dataClass: 'text-right',

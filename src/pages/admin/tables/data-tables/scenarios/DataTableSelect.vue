@@ -1,5 +1,5 @@
 <template>
-  <va-card :title="$t('tables.selectable')">
+  <va-card :title="$t('app.tables.selectable')">
     <va-data-table
       :fields="fields"
       :data="users"
@@ -17,7 +17,7 @@
     </va-data-table>
 
     <p v-if="selected.length">
-      {{ $t('tables.selected') }}: {{ selected.map(user => user.fullName).join(", ") }}.
+      {{ $t('app.tables.selected') }}: {{ selected.map(user => user.fullName).join(", ") }}.
     </p>
   </va-card>
 </template>
@@ -37,15 +37,15 @@ export default {
         name: '__slot:select',
       }, {
         name: 'fullName',
-        title: this.$t('tables.headings.name'),
+        title: this.$t('app.tables.headings.name'),
         width: '20%',
       }, {
         name: 'email',
-        title: this.$t('tables.headings.email'),
+        title: this.$t('app.tables.headings.email'),
         width: '30%',
       }, {
         name: 'country',
-        title: this.$t('tables.headings.country'),
+        title: this.$t('app.tables.headings.country'),
         width: '30%',
       }, {
         name: '__slot:graph',

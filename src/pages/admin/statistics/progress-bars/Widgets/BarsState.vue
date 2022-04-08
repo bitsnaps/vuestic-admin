@@ -1,7 +1,7 @@
 <template>
   <va-card
     class="bars-state"
-    :title="$t('progressBars.state')"
+    :title="$t('app.progressBars.state')"
   >
     <va-card-content class="row">
       <div class="flex md4 xs12">

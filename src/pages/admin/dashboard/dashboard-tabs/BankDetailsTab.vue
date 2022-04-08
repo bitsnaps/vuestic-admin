@@ -6,25 +6,25 @@
           {{$t('dashboard.tabs.bankDetails.detailsFields')}}
         </div>
         <va-input
-          :label="$t('dashboard.tabs.bankDetails.bankName')"
+          :label="$t('app.dashboard.tabs.bankDetails.bankName')"
           v-model="form.bankName"
         />
         <va-input
-          :label="$t('dashboard.tabs.bankDetails.accountName')"
+          :label="$t('app.dashboard.tabs.bankDetails.accountName')"
           v-model="form.accountName"
         />
         <va-input
-          :label="$t('dashboard.tabs.bankDetails.sortCode')"
+          :label="$t('app.dashboard.tabs.bankDetails.sortCode')"
           v-model="form.sortCode"
         />
       </div>
       <div class="flex xs12 md6">
         <va-input
-          :label="$t('dashboard.tabs.bankDetails.accountNumber')"
+          :label="$t('app.dashboard.tabs.bankDetails.accountNumber')"
           v-model="form.accountNumber"
         />
         <va-input
-          :label="$t('dashboard.tabs.bankDetails.notes')"
+          :label="$t('app.dashboard.tabs.bankDetails.notes')"
           v-model="form.notes"
         />
       </div>

@@ -40,16 +40,16 @@ export default {
     fields () {
       return [{
         name: 'fullName',
-        title: this.$t('tables.headings.name'),
+        title: this.$t('app.tables.headings.name'),
         sortField: 'fullName',
         width: '25%',
       }, {
         name: 'email',
-        title: this.$t('tables.headings.email'),
+        title: this.$t('app.tables.headings.email'),
         width: '30%',
       }, {
         name: 'country',
-        title: this.$t('tables.headings.country'),
+        title: this.$t('app.tables.headings.country'),
         sortField: 'country',
         width: '25%',
       }, {

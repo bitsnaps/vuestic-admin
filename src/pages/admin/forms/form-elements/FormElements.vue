@@ -2,7 +2,7 @@
   <div class="form-elements">
     <div class="row">
       <div class="flex xs12">
-        <va-card :title="$t('forms.inputs.title')">
+        <va-card :title="$t('app.forms.inputs.title')">
           <va-card-content>
             <form>
               <div class="row">
@@ -75,7 +75,7 @@
       </div>
 
       <!-- <div class="flex xs12">
-        <va-card :title="$t('forms.dateTimePicker.title')">
+        <va-card :title="$t('app.forms.dateTimePicker.title')">
           <va-card-content>
             <form>
               <div class="row overflow--hidden">
@@ -83,20 +83,20 @@
                   <div class="row row-inside">
                     <div class="flex xs12 sm6">
                       <va-date-picker
-                        :label="$t('forms.dateTimePicker.basic')"
+                        :label="$t('app.forms.dateTimePicker.basic')"
                         v-model="datepicker.simple"
                       />
                     </div>
                     <div class="flex xs12 sm6">
                       <va-date-picker
-                        :label="$t('forms.dateTimePicker.time')"
+                        :label="$t('app.forms.dateTimePicker.time')"
                         :config="{enableTime: true}"
                         v-model="datepicker.time"
                       />
                     </div>
                     <div class="flex xs12 sm6">
                       <va-date-picker
-                        :label="$t('forms.dateTimePicker.customFirstDay')"
+                        :label="$t('app.forms.dateTimePicker.customFirstDay')"
                         :config="{locale: {firstDayOfWeek: 1}}"
                         v-model="datepicker.customFirstDay"
                         weekDays
@@ -104,21 +104,21 @@
                     </div>
                     <div class="flex xs12 sm6">
                       <va-date-picker
-                        :label="$t('forms.dateTimePicker.disabled')"
+                        :label="$t('app.forms.dateTimePicker.disabled')"
                         disabled
                         v-model="datepicker.disabled"
                       />
                     </div>
                     <div class="flex xs12 sm6">
                       <va-date-picker
-                        :label="$t('forms.dateTimePicker.multiple')"
+                        :label="$t('app.forms.dateTimePicker.multiple')"
                         :config="{mode: 'multiple'}"
                         v-model="datepicker.multiple"
                       />
                     </div>
                     <div class="flex xs12 sm6">
                       <va-date-picker
-                        :label="$t('forms.dateTimePicker.customDateFormat')"
+                        :label="$t('app.forms.dateTimePicker.customDateFormat')"
                         :config="{dateFormat: 'Y-M-d'}"
                         v-model="datepicker.customDate"
                       />
@@ -128,7 +128,7 @@
 
                 <div class="flex xs12 md4">
                   <va-date-picker
-                    :label="$t('forms.dateTimePicker.range')"
+                    :label="$t('app.forms.dateTimePicker.range')"
                     :config="{mode: 'range', inline: true}"
                     v-model="datepicker.range"
                   />
@@ -140,13 +140,13 @@
       </div> -->
 
       <div class="flex xs12">
-        <va-card :title="$t('forms.selects.title')">
+        <va-card :title="$t('app.forms.selects.title')">
           <va-card-content>
             <form>
               <div class="row">
                 <div class="flex md6 xs12">
                   <va-select
-                    :label="$t('forms.selects.simple')"
+                    :label="$t('app.forms.selects.simple')"
                     v-model="simpleSelectModel"
                     textBy="description"
                     track-by="id"
@@ -155,7 +155,7 @@
                 </div>
                 <div class="flex md6 xs12">
                   <va-select
-                    :label="$t('forms.selects.multi')"
+                    :label="$t('app.forms.selects.multi')"
                     v-model="multiSelectModel"
                     textBy="description"
                     track-by="id"
@@ -165,14 +165,14 @@
                 </div>
                 <div class="flex md6 xs12">
                   <va-select
-                    :label="$t('forms.selects.country')"
+                    :label="$t('app.forms.selects.country')"
                     v-model="chosenCountry"
                     :options="countriesList"
                   />
                 </div>
                 <div class="flex md6 xs12">
                   <va-select
-                    :label="$t('forms.selects.countryMulti')"
+                    :label="$t('app.forms.selects.countryMulti')"
                     v-model="multiSelectCountriesModel"
                     multiple
                     :options="countriesList"
@@ -180,7 +180,7 @@
                 </div>
                 <div class="flex md6 xs12">
                   <va-select
-                    :label="$t('forms.selects.searchable')"
+                    :label="$t('app.forms.selects.searchable')"
                     v-model="searchableSelectModel"
                     searchable
                     textBy="description"
@@ -189,7 +189,7 @@
                 </div>
                 <div class="flex md6 xs12">
                   <va-select
-                    :label="$t('forms.selects.searchableMulti')"
+                    :label="$t('app.forms.selects.searchableMulti')"
                     v-model="multiSearchableSelectModel"
                     textBy="description"
                     searchable
@@ -204,37 +204,37 @@
       </div>
 
       <div class="flex xs12">
-        <va-card :title="$t('forms.controls.title')">
+        <va-card :title="$t('app.forms.controls.title')">
           <va-card-content>
             <form>
               <div class="row">
                 <div class="flex md3">
                   <fieldset>
                     <va-checkbox
-                      :label="$t('forms.controls.unselected')"
+                      :label="$t('app.forms.controls.unselected')"
                       v-model="checkbox.unselected"
                     />
                     <va-checkbox
-                      :label="$t('forms.controls.selected')"
+                      :label="$t('app.forms.controls.selected')"
                       v-model="checkbox.selected"
                     />
                     <va-checkbox
-                      :label="$t('forms.controls.readonly')"
+                      :label="$t('app.forms.controls.readonly')"
                       v-model="checkbox.readonly"
                       :readonly="true"
                     />
                     <va-checkbox
-                      :label="$t('forms.controls.disabled')"
+                      :label="$t('app.forms.controls.disabled')"
                       :disabled="true"
                       v-model="checkbox.disabled"
                     />
                     <va-checkbox
-                      :label="$t('forms.controls.error')"
+                      :label="$t('app.forms.controls.error')"
                       error
                       v-model="checkbox.error"
                     />
                     <va-checkbox
-                      :label="$t('forms.controls.errorMessage')"
+                      :label="$t('app.forms.controls.errorMessage')"
                       :error-messages="errorMessages"
                       :errorCount="2"
                       v-model="checkbox.errorMessages"

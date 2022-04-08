@@ -9,15 +9,15 @@
           {{$t('dashboard.tabs.billingAddress.personalInfo')}}
         </div>
         <va-input
-          :label="$t('dashboard.tabs.billingAddress.firstName')"
+          :label="$t('app.dashboard.tabs.billingAddress.firstName')"
           v-model="form.name"
         />
         <va-input
-          :label="$t('dashboard.tabs.billingAddress.email')"
+          :label="$t('app.dashboard.tabs.billingAddress.email')"
           v-model="form.email"
         />
         <va-input
-          :label="$t('dashboard.tabs.billingAddress.address')"
+          :label="$t('app.dashboard.tabs.billingAddress.address')"
           v-model="form.address"
         />
       </div>
@@ -30,19 +30,19 @@
         </div>
         <va-select
           :options="countriesList"
-          :label="$t('dashboard.tabs.billingAddress.country')"
+          :label="$t('app.dashboard.tabs.billingAddress.country')"
           v-model="form.country"
           searchable
         />
         <va-select
-          :label="$t('dashboard.tabs.billingAddress.city')"
+          :label="$t('app.dashboard.tabs.billingAddress.city')"
           v-model="form.city"
           :options="allowedCitiesList"
           key-by="text"
           track-by="text"
         />
         <va-checkbox
-          :label="$t('dashboard.tabs.billingAddress.infiniteConnections')"
+          :label="$t('app.dashboard.tabs.billingAddress.infiniteConnections')"
           v-model="form.connection"
         />
       </div>

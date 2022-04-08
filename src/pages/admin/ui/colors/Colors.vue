@@ -2,7 +2,7 @@
   <div class="row">
     <div class="flex xs12 sm6">
       <va-card>
-        <va-card-title>{{ $t('colors.themeColors') }}</va-card-title>
+        <va-card-title>{{ $t('app.colors.themeColors') }}</va-card-title>
         <va-card-content>
           <div
             v-for="(themeColor, index) in themeColors"
@@ -20,7 +20,7 @@
 
     <div class="flex xs12 sm6">
       <va-card>
-        <va-card-title>{{ $t('colors.extraColors') }}</va-card-title>
+        <va-card-title>{{ $t('app.colors.extraColors') }}</va-card-title>
         <va-card-content>
           <div
             v-for="(extraColor, index) in extraColors"
@@ -38,7 +38,7 @@
 
     <div class="flex xs12 sm6 lg4">
       <va-card>
-        <va-card-title>{{ $t('colors.gradients.basic.title') }}</va-card-title>
+        <va-card-title>{{ $t('app.colors.gradients.basic.title') }}</va-card-title>
         <va-card-content>
           <div
             v-for="(buttonGradient, index) in buttonGradients"
@@ -58,10 +58,10 @@
 
     <div class="flex xs12 sm6 lg4">
       <va-card>
-        <va-card-title>{{ $t('colors.gradients.hovered.title') }}</va-card-title>
+        <va-card-title>{{ $t('app.colors.gradients.hovered.title') }}</va-card-title>
         <va-card-content>
           <p class="mt-0 mb-2">
-            {{ $t('colors.gradients.hovered.text') }}
+            {{ $t('app.colors.gradients.hovered.text') }}
           </p>
           <div
             v-for="(buttonGradient, index) in buttonGradients"
@@ -81,10 +81,10 @@
 
     <div class="flex xs12 sm6 lg4">
       <va-card>
-        <va-card-title>{{ $t('colors.gradients.pressed.title') }}</va-card-title>
+        <va-card-title>{{ $t('app.colors.gradients.pressed.title') }}</va-card-title>
         <va-card-content>
           <p class="mt-0 mb-2">
-            {{ $t('colors.gradients.pressed.text') }}
+            {{ $t('app.colors.gradients.pressed.text') }}
           </p>
           <div
             v-for="(buttonGradient, index) in buttonGradients"
@@ -106,7 +106,7 @@
 
 <script>
 import { themeColors, extraColors, buttonGradients } from './color-presentation/colorsData'
-import colorPresentation from './color-presentation/ColorPresentation'
+import colorPresentation from './color-presentation/ColorPresentation.vue'
 
 export default {
   components: {

@@ -1,11 +1,11 @@
 <template>
-  <va-card :title="$t('dashboard.table.title')">
+  <va-card :title="('dashboard.table.title')">
     <div class="row align--center mb-1">
       <div class="flex xs12 sm6">
         <va-input
           class="ma-0"
           :value="term"
-          :placeholder="$t('tables.searchByName')"
+          :placeholder="('tables.searchByName')"
           @input="search"
           removable
         >
@@ -58,7 +58,7 @@
           class="ma-0"
           @click="resolveUser(props.rowData)"
         >
-          {{ $t('dashboard.table.resolve') }}
+          {{ ('dashboard.table.resolve') }}
         </va-button>
       </template>
     </va-data-table>
@@ -86,15 +86,15 @@ export default {
         dataClass: 'text-center',
       }, {
         name: 'name',
-        title: this.$t('tables.headings.name'),
+        title: this.('tables.headings.name'),
         width: '30%',
       }, {
         name: 'email',
-        title: this.$t('tables.headings.email'),
+        title: this.('tables.headings.email'),
         width: '30%',
       }, {
         name: '__slot:status',
-        title: this.$t('tables.headings.status'),
+        title: this.('tables.headings.status'),
         width: '20%',
         sortField: 'status',
       }, {
@@ -109,16 +109,16 @@ export default {
         dataClass: 'text-center',
       }, {
         name: 'name',
-        title: this.$t('tables.headings.name'),
+        title: this.('tables.headings.name'),
         width: '20%',
       }, {
         name: 'email',
-        title: this.$t('tables.headings.email'),
+        title: this.('tables.headings.email'),
         width: '20%',
       },
       {
         name: 'country',
-        title: this.$t('tables.headings.location'),
+        title: this.('tables.headings.location'),
         with: '20%',
       },
       {
@@ -127,7 +127,7 @@ export default {
       },
       {
         name: '__slot:status',
-        title: this.$t('tables.headings.status'),
+        title: this.('tables.headings.status'),
         width: '20%',
         sortField: 'status',
       },
@@ -139,10 +139,10 @@ export default {
     modeOptions () {
       return [{
         value: 0,
-        label: this.$t('dashboard.table.brief'),
+        label: this.('dashboard.table.brief'),
       }, {
         value: 1,
-        label: this.$t('dashboard.table.detailed'),
+        label: this.('dashboard.table.detailed'),
       }]
     },
     filteredData () {
@@ -176,7 +176,7 @@ export default {
         this.loading = false
 
         this.$vaToast.init({
-          message: this.$t('dashboard.table.resolved'),
+          message: this.('dashboard.table.resolved'),
           iconClass: 'fa-check',
           position: 'bottom-right',
           duration: 1500,

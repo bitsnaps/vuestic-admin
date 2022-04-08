@@ -6,7 +6,7 @@
           no-padding-h
           style="overflow-x: auto;"
         >
-          <va-card-title>{{ $t('timelines.horizontalSimple') }}</va-card-title>
+          <va-card-title>{{ $t('app.timelines.horizontalSimple') }}</va-card-title>
           <va-card-content>
             <va-timeline style="min-width: 400px;">
               <va-timeline-item active>
@@ -15,10 +15,10 @@
                     class="title text--center"
                     :style="{color: theme.primary}"
                   >
-                    {{ $t('timelines.firstDate') }}
+                    {{ $t('app.timelines.firstDate') }}
                   </div>
                   <div class="va-timeline-item__description">
-                    {{ $t('timelines.horizontalActionFirst') }}
+                    {{ $t('app.timelines.horizontalActionFirst') }}
                   </div>
                 </template>
               </va-timeline-item>
@@ -28,20 +28,20 @@
                     class="title text--center"
                     :style="{color: theme.primary}"
                   >
-                    {{ $t('timelines.secondDate') }}
+                    {{ $t('app.timelines.secondDate') }}
                   </div>
                   <div class="va-timeline-item__description">
-                    {{ $t('timelines.horizontalActionSecond') }}
+                    {{ $t('app.timelines.horizontalActionSecond') }}
                   </div>
                 </template>
               </va-timeline-item>
               <va-timeline-item>
                 <template v-slot:before>
                   <div class="title title--gray text--center">
-                    {{ $t('timelines.thirdDate') }}
+                    {{ $t('app.timelines.thirdDate') }}
                   </div>
                   <div class="va-timeline-item__description">
-                    {{ $t('timelines.horizontalActionThird') }}
+                    {{ $t('app.timelines.horizontalActionThird') }}
                   </div>
                 </template>
               </va-timeline-item>
@@ -56,7 +56,7 @@
           style="overflow-x: auto;"
           class="timelines__horizontal-long"
         >
-          <va-card-title>{{ $t('timelines.horizontalCards') }}</va-card-title>
+          <va-card-title>{{ $t('app.timelines.horizontalCards') }}</va-card-title>
           <va-card-content>
             <va-timeline align-top style="min-width: 600px;" class="timelines__horizontal-long__timeline">
               <va-timeline-item active>
@@ -65,7 +65,7 @@
                     class="title text--center"
                     :style="{color: theme.primary}"
                   >
-                    {{ $t('timelines.firstDate') }}
+                    {{ $t('app.timelines.firstDate') }}
                   </div>
                 </template>
                 <template #after>
@@ -74,8 +74,8 @@
                     stripe-color="warning"
                     class="mb-0"
                   >
-                    <va-card-title>{{ $t('timelines.titleDateFirst') }}</va-card-title>
-                    <va-card-content>{{ $t('timelines.contentFirst') }}</va-card-content>
+                    <va-card-title>{{ $t('app.timelines.titleDateFirst') }}</va-card-title>
+                    <va-card-content>{{ $t('app.timelines.contentFirst') }}</va-card-content>
                   </va-card>
                 </template>
               </va-timeline-item>
@@ -85,7 +85,7 @@
                     class="title text--center"
                     :style="{color: theme.primary}"
                   >
-                    {{ $t('timelines.secondDate') }}
+                    {{ $t('app.timelines.secondDate') }}
                   </div>
                 </template>
                 <template #after>
@@ -94,15 +94,15 @@
                     stripe-color="info"
                     class="mb-0"
                   >
-                    <va-card-title>{{ $t('timelines.titleDateSecond') }}</va-card-title>
-                    <va-card-content>{{ $t('timelines.contentSecond') }}</va-card-content>
+                    <va-card-title>{{ $t('app.timelines.titleDateSecond') }}</va-card-title>
+                    <va-card-content>{{ $t('app.timelines.contentSecond') }}</va-card-content>
                   </va-card>
                 </template>
               </va-timeline-item>
               <va-timeline-item>
                 <template v-slot:before>
                   <div class="title title--gray text--center">
-                    {{ $t('timelines.thirdDate') }}
+                    {{ $t('app.timelines.thirdDate') }}
                   </div>
                 </template>
                 <template #after>
@@ -111,8 +111,8 @@
                     stripe-color="info"
                     class="mb-0"
                   >
-                    <va-card-title>{{ $t('timelines.titleDateThird') }}</va-card-title>
-                    <va-card-content>{{ $t('timelines.contentThird') }}</va-card-content>
+                    <va-card-title>{{ $t('app.timelines.titleDateThird') }}</va-card-title>
+                    <va-card-content>{{ $t('app.timelines.contentThird') }}</va-card-content>
                   </va-card>
                 </template>
               </va-timeline-item>
@@ -123,7 +123,7 @@
 
       <div class="flex xs12">
         <va-card no-padding-v>
-          <va-card-title>{{ $t('timelines.verticalLabel') }}</va-card-title>
+          <va-card-title>{{ $t('app.timelines.verticalLabel') }}</va-card-title>
           <va-card-content>
             <va-timeline vertical>
               <va-timeline-item active>
@@ -132,7 +132,7 @@
                     class="title va-timeline-item__text"
                     :style="{color: theme.primary}"
                   >
-                    {{ $t('timelines.firstDate') }}
+                    {{ $t('app.timelines.firstDate') }}
                   </span>
                 </template>
                 <template #after>
@@ -141,8 +141,8 @@
                     stripe-color="success"
                     class="mb-0"
                   >
-                    <va-card-title>{{ $t('timelines.titleFirst') }}</va-card-title>
-                    <va-card-content>{{ $t('timelines.contentFirst') }}</va-card-content>
+                    <va-card-title>{{ $t('app.timelines.titleFirst') }}</va-card-title>
+                    <va-card-content>{{ $t('app.timelines.contentFirst') }}</va-card-content>
                   </va-card>
                 </template>
 
@@ -153,7 +153,7 @@
                     class="title va-timeline-item__text"
                     :style="{color: theme.primary}"
                   >
-                    {{ $t('timelines.secondDate') }}
+                    {{ $t('app.timelines.secondDate') }}
                   </span>
                 </template>
                 <template #after>
@@ -162,15 +162,15 @@
                     stripe-color="success"
                     class="mb-0"
                   >
-                    <va-card-title>{{ $t('timelines.titleSecond') }}</va-card-title>
-                    <va-card-content>{{ $t('timelines.contentSecond') }}</va-card-content>
+                    <va-card-title>{{ $t('app.timelines.titleSecond') }}</va-card-title>
+                    <va-card-content>{{ $t('app.timelines.contentSecond') }}</va-card-content>
                   </va-card>
                 </template>
               </va-timeline-item>
               <va-timeline-item>
                 <template #before>
                   <span class="title title--gray va-timeline-item__text">
-                    {{ $t('timelines.thirdDate') }}
+                    {{ $t('app.timelines.thirdDate') }}
                   </span>
                 </template>
                 <template #after>
@@ -178,8 +178,8 @@
                     stripe
                     stripe-color="success"
                   >
-                    <va-card-title>{{ $t('timelines.titleThird') }}</va-card-title>
-                    <va-card-content>{{ $t('timelines.contentThird') }}</va-card-content>
+                    <va-card-title>{{ $t('app.timelines.titleThird') }}</va-card-title>
+                    <va-card-content>{{ $t('app.timelines.contentThird') }}</va-card-content>
                   </va-card>
                 </template>
               </va-timeline-item>
@@ -190,7 +190,7 @@
 
       <div class="flex xs12">
         <va-card no-padding-v>
-          <va-card-title>{{ $t('timelines.verticalCentered') }}</va-card-title>
+          <va-card-title>{{ $t('app.timelines.verticalCentered') }}</va-card-title>
           <va-card-content>
             <va-timeline vertical centered style="min-width: 300px;">
               <va-timeline-item color="danger" active>
@@ -199,7 +199,7 @@
                     class="title title--danger va-timeline-item__text"
                     :style="{color: theme.danger}"
                   >
-                    {{ $t('timelines.firstDate') }}
+                    {{ $t('app.timelines.firstDate') }}
                   </span>
                 </template>
                 <template class="after">
@@ -208,8 +208,8 @@
                     stripe-color="danger"
                     class="mb-0"
                   >
-                    <va-card-title>{{ $t('timelines.titleFirst') }}</va-card-title>
-                    <va-card-content>{{ $t('timelines.contentFirst') }}</va-card-content>
+                    <va-card-title>{{ $t('app.timelines.titleFirst') }}</va-card-title>
+                    <va-card-content>{{ $t('app.timelines.contentFirst') }}</va-card-content>
                   </va-card>
                 </template>
               </va-timeline-item>
@@ -219,7 +219,7 @@
                     class="title title--danger va-timeline-item__text"
                     :style="{color: theme.danger}"
                   >
-                    {{ $t('timelines.secondDate') }}
+                    {{ $t('app.timelines.secondDate') }}
                   </span>
                 </template>
                 <template #after>
@@ -227,8 +227,8 @@
                     stripe
                     stripe-color="danger"
                   >
-                    <va-card-title>{{ $t('timelines.titleSecond') }}</va-card-title>
-                    <va-card-content>{{ $t('timelines.contentSecond') }}</va-card-content>
+                    <va-card-title>{{ $t('app.timelines.titleSecond') }}</va-card-title>
+                    <va-card-content>{{ $t('app.timelines.contentSecond') }}</va-card-content>
                   </va-card>
                 </template>
               </va-timeline-item>
@@ -238,7 +238,7 @@
                     class="title title--danger va-timeline-item__text"
                     :style="{color: theme.danger}"
                   >
-                    {{ $t('timelines.thirdDate') }}
+                    {{ $t('app.timelines.thirdDate') }}
                   </span>
                 </template>
                 <template #after>
@@ -247,8 +247,8 @@
                     stripe-color="danger"
                     class="mb-0"
                   >
-                    <va-card-title>{{ $t('timelines.titleThird') }}</va-card-title>
-                    <va-card-content>{{ $t('timelines.contentThird') }}</va-card-content>
+                    <va-card-title>{{ $t('app.timelines.titleThird') }}</va-card-title>
+                    <va-card-content>{{ $t('app.timelines.contentThird') }}</va-card-content>
                   </va-card>
                 </template>
               </va-timeline-item>
