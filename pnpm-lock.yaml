@@ -4,18 +4,21 @@ specifiers:
   '@intlify/vite-plugin-vue-i18n': ^3.3.1
   '@vitejs/plugin-vue': ^1.10.2
   '@vue/compiler-sfc': ^3.2.31
+  amcharts3: ^3.21.15
+  ammap3: ^3.21.15
   axios: ^0.21.4
   chart.js: ^3.7.1
-  dotenv: ^16.0.0
   flag-icon-css: ^4.1.7
   flag-icons: ^6.1.1
   font-awesome: ^4.7.0
+  google-maps: ^4.3.3
   ionicons: ^6.0.1
   leaflet: ^1.7.1
   leaflet-map: ^0.2.1
   material-design-icons: ^3.0.1
   medium-editor: ^5.23.3
   ors: ^1.0.0
+  register-service-worker: ^1.7.1
   sass: ^1.49.11
   typescript: ^4.6.3
   vite: ^2.9.1
@@ -23,29 +26,36 @@ specifiers:
   vitest: ^0.8.2
   vue: ^3.2.31
   vue-chartjs: ^4.0.4
+  vue-gtm: ^3.2.1
   vue-i18n: ^9.2.0-beta.34
   vue-router: ^4.0.14
+  vue-yandex-maps: ^0.10.9
   vuestic-ui: ^1.3.5
   vuex: ^4.0.2
 
 dependencies:
+  amcharts3: 3.21.15
+  ammap3: 3.21.15
   axios: 0.21.4
   chart.js: 3.7.1
-  dotenv: 16.0.0
   flag-icon-css: 4.1.7
   flag-icons: 6.2.0
   font-awesome: 4.7.0
+  google-maps: 4.3.3
   ionicons: 6.0.1
   leaflet: 1.7.1
   leaflet-map: 0.2.1
   material-design-icons: 3.0.1
   medium-editor: 5.23.3
   ors: 1.0.0
+  register-service-worker: 1.7.2
   typescript: 4.6.3
   vue: 3.2.31
   vue-chartjs: 4.0.5_chart.js@3.7.1+vue@3.2.31
+  vue-gtm: 3.5.0_vue@3.2.31
   vue-i18n: 9.2.0-beta.34_vue@3.2.31
   vue-router: 4.0.14_vue@3.2.31
+  vue-yandex-maps: 0.10.12
   vuestic-ui: 1.3.5_vue@3.2.31
   vuex: 4.0.2_vue@3.2.31
 
@@ -216,6 +226,11 @@ packages:
     resolution: {integrity: sha512-/ceqdqeRraGolFTcfoXNiqjyQhZzbINDngeoAq9GoHa8PPK1yNzTaxWjA6BFWp5Ua9JpXEMSS4s5i9tS0hOJtw==}
     dev: true
 
+  /@types/googlemaps/3.43.3:
+    resolution: {integrity: sha512-ZWNoz/O8MPEpiajvj7QiqCY8tTLFNqNZ/a+s+zTV58wFVNAvvqV4bdGfnsjTb5Cs4V6wEsLrX8XRhmnyYJ2Tdg==}
+    deprecated: 'Types for the Google Maps browser API have moved to @types/google.maps. Note: these types are not for the googlemaps npm package, which is a Node API.'
+    dev: false
+
   /@vitejs/plugin-vue/1.10.2_vite@2.9.1:
     resolution: {integrity: sha512-/QJ0Z9qfhAFtKRY+r57ziY4BSbGUTGsPRMpB/Ron3QPwBZM4OZAZHdTa4a8PafCwU5DTatXG8TMDoP8z+oDqJw==}
     engines: {node: '>=12.0.0'}
@@ -319,6 +334,14 @@ packages:
     engines: {node: '>=0.4.0'}
     hasBin: true
     dev: true
+
+  /amcharts3/3.21.15:
+    resolution: {integrity: sha512-t7/RA0iuDXN2QAneUThW87DbCnSUBYFWxSr2Hsd/+sPvfG0aqeUXEFpqsozcEl2y2XgCEQJ4jMaZ1X/CoYArGA==}
+    dev: false
+
+  /ammap3/3.21.15:
+    resolution: {integrity: sha512-85UQsIZ1x6LQWSHE9LXpcoCLUMuxDypdqVXy48wA2uXw+t0pQlfsnRnKi66fL+yWb2GXNecXEAOH2BA44VO/DA==}
+    dev: false
 
   /anymatch/3.1.2:
     resolution: {integrity: sha512-P43ePfOAIupkguHUycrc4qJ9kz8ZiuOUijaETwX7THt0Y/GNK7v0aa8rY816xWjZ7rJdA5XdMcpVFTKMq+RvWg==}
@@ -434,11 +457,6 @@ packages:
 
   /detect-browser/5.3.0:
     resolution: {integrity: sha512-53rsFbGdwMwlF7qvCt0ypLM5V5/Mbl0szB7GPN8y9NCcbknYOeVVXdrXEq+90IwAfrrzt6Hd+u2E2ntakICU8w==}
-    dev: false
-
-  /dotenv/16.0.0:
-    resolution: {integrity: sha512-qD9WU0MPM4SWLPJy/r2Be+2WgQj8plChsyrCNQzW/0WjvcJQiKQJ9mH3ZgB3fxbUUxgc/11ZJ0Fi5KiimWGz2Q==}
-    engines: {node: '>=12'}
     dev: false
 
   /element-resize-detector/1.2.4:
@@ -750,6 +768,12 @@ packages:
       is-glob: 4.0.3
     dev: true
 
+  /google-maps/4.3.3:
+    resolution: {integrity: sha512-MQbEgBNQbGyV7mfS2tlFgW4EoGKLia24BvAl4a+kgsYWt4283kyPpaay/yKIsScQLr7nSUONaLNfOdMsCuJDEw==}
+    dependencies:
+      '@types/googlemaps': 3.43.3
+    dev: false
+
   /has/1.0.3:
     resolution: {integrity: sha512-f2dvO0VU6Oej7RkWJGrehjbzMAjFp5/VKPp5tTpWIV4JHHZK1/BxbFRtf/siA2SWTe09caDmVtYYzWEIbBS4zw==}
     engines: {node: '>= 0.4.0'}
@@ -919,6 +943,10 @@ packages:
       picomatch: 2.3.1
     dev: true
 
+  /register-service-worker/1.7.2:
+    resolution: {integrity: sha512-CiD3ZSanZqcMPRhtfct5K9f7i3OLCcBBWsJjLh1gW9RO/nS94sVzY59iS+fgYBOBqaBpf4EzfqUF3j9IG+xo8A==}
+    dev: false
+
   /resolve/1.22.0:
     resolution: {integrity: sha512-Hhtrw0nLeSrFQ7phPp4OOcVjLPIeMnRlr5mcnVuMe7M/7eBn98A3hmFRLoFo3DLZkivSYwhRUJTyPyWAk56WLw==}
     hasBin: true
@@ -1010,6 +1038,10 @@ packages:
     hasBin: true
     dev: false
 
+  /url-search-params-polyfill/8.1.1:
+    resolution: {integrity: sha512-KmkCs6SjE6t4ihrfW9JelAPQIIIFbJweaaSLTh/4AO+c58JlDcb+GbdPt8yr5lRcFg4rPswRFRRhBGpWwh0K/Q==}
+    dev: false
+
   /vite-plugin-i18n-resources/1.0.3:
     resolution: {integrity: sha512-ohB4Cvao6QBaO7eAxH2IgVUNyB+QStxhU0OEOdH2ZIKhcx8TVCu1kG5eLnv5SH9GqeOfRijTpSeC1JJfk98IjA==}
     dev: true
@@ -1081,6 +1113,18 @@ packages:
       vue: 3.2.31
     dev: false
 
+  /vue-gtm/3.5.0_vue@3.2.31:
+    resolution: {integrity: sha512-MJ0eqPm2NG1MjUJv8K3DghVzbXNONLd2rav0WbpuCfnD5r+SKyD+kxYnPo8exAg7zN+krY+swXoXKJuXtb2Acg==}
+    deprecated: moved to @gtm-support/vue-gtm and @gtm-support/vue2-gtm
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      url-search-params-polyfill: 8.1.1
+      vue: 3.2.31
+    optionalDependencies:
+      vue-router: 4.0.14_vue@3.2.31
+    dev: false
+
   /vue-i18n/9.2.0-beta.34_vue@3.2.31:
     resolution: {integrity: sha512-AKzOMn91OKBKHTPVWrDF+kBSbYYNGfBeeBhuihkxW2ZTXd1l8vp7WBqA6weV9kb9EDv7HO61Qhctqcr79TmHVw==}
     engines: {node: '>= 12'}
@@ -1101,6 +1145,10 @@ packages:
     dependencies:
       '@vue/devtools-api': 6.1.4
       vue: 3.2.31
+    dev: false
+
+  /vue-yandex-maps/0.10.12:
+    resolution: {integrity: sha512-xou3F+5Wcb3ol4obXC0SAbV+2XtmZKWxz9VG5wxBauLj94Bh4PiYYrIMYz8DouiUZ7weZXUAv3E0vwN7coSeVg==}
     dev: false
 
   /vue/3.2.31:

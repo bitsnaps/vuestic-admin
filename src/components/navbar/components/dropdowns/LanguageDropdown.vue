@@ -39,13 +39,25 @@ export default {
       type: Array,
       default: () => [
         {
-          code: 'en',
+          code: 'gb',
           name: 'english',
         },
         {
-          code: 'fr',
-          name: 'french',
-        }
+          code: 'es',
+          name: 'spanish',
+        },
+        {
+          code: 'br',
+          name: 'brazilian_portuguese',
+        },
+        {
+          code: 'cn',
+          name: 'simplified_chinese',
+        },
+        {
+          code: 'ir',
+          name: 'persian',
+        },
       ],
     },
   },
