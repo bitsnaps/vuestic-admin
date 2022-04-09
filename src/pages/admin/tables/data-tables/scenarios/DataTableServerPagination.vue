@@ -18,9 +18,9 @@
 <script>
 import axios from 'axios'
 
-// const USERS_API = 'https://reqres.in/api/users'
+const USERS_API = 'https://reqres.in/api/users'
 // use: json-server src/pages/admin/tables/data-tables/data/users-watch.json -p 5000
-const USERS_API = 'http://localhost:5000/users'
+// const USERS_API = 'http://localhost:5000/users'
 
 export default {
   data () {

@@ -2,7 +2,7 @@
   <va-card :title="$t('app.tables.labelsActions')">
     <va-data-table
       :fields="fields"
-      :data="userz"
+      :data="users"
       no-pagination
     >
       <template #marker="props">
