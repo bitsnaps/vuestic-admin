@@ -3,7 +3,7 @@
     <div class="row">
       <div class="flex xs12">
         <va-card>
-          <va-card-title>{{ $t("capp.ollapse.basic") }}</va-card-title>
+          <va-card-title>{{ $t("app.collapse.basic") }}</va-card-title>
           <va-card-content>
             <va-accordion v-model="basicAccordionValue">
               <va-collapse class="mb-4" :header="$t('app.collapse.firstHeader')">
@@ -16,7 +16,7 @@
               </va-collapse>
               <va-collapse :header="$t('app.collapse.secondHeader')">
                 <div class="pa-3">
-                  <p class="display-3">{{ $t("collapse.content.title") }}</p>
+                  <p class="display-3">{{ $t("app.collapse.content.title") }}</p>
                   <div>
                     {{ $t("app.collapse.content.text") }}
                   </div>
@@ -74,7 +74,7 @@
                   </va-button>
                 </template>
                 <div class="pa-3">
-                  <p class="display-3">{{ $t("collapse.content.title") }}</p>
+                  <p class="display-3">{{ $t("app.collapse.content.title") }}</p>
                   <div>
                     {{ $t("app.collapse.content.text") }}
                   </div>
@@ -87,7 +87,7 @@
                   </va-button>
                 </template>
                 <div>
-                  <p class="display-3">{{ $t("capp.ollapse.content.title") }}</p>
+                  <p class="display-3">{{ $t("app.collapse.content.title") }}</p>
                   <div class="pa-3">
                     {{ $t("app.collapse.content.text") }}
                   </div>

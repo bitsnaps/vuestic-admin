@@ -5,7 +5,7 @@
         <va-input
           class="ma-0"
           :value="term"
-          :placeholder="('tables.searchByName')"
+          :placeholder="$t('app.tables.searchByName')"
           @input="search"
           removable
         >
@@ -86,15 +86,15 @@ export default {
         dataClass: 'text-center',
       }, {
         name: 'name',
-        title: this.('tables.headings.name'),
+        title: this.$t('app.tables.headings.name'),
         width: '30%',
       }, {
         name: 'email',
-        title: this.('tables.headings.email'),
+        title: this.$t('app.tables.headings.email'),
         width: '30%',
       }, {
         name: '__slot:status',
-        title: this.('tables.headings.status'),
+        title: this.$t('app.tables.headings.status'),
         width: '20%',
         sortField: 'status',
       }, {
@@ -109,16 +109,16 @@ export default {
         dataClass: 'text-center',
       }, {
         name: 'name',
-        title: this.('tables.headings.name'),
+        title: this.$t('app.tables.headings.name'),
         width: '20%',
       }, {
         name: 'email',
-        title: this.('tables.headings.email'),
+        title: this.$t('app.tables.headings.email'),
         width: '20%',
       },
       {
         name: 'country',
-        title: this.('tables.headings.location'),
+        title: this.$t('app.tables.headings.location'),
         with: '20%',
       },
       {
@@ -127,7 +127,7 @@ export default {
       },
       {
         name: '__slot:status',
-        title: this.('tables.headings.status'),
+        title: this.$t('app.tables.headings.status'),
         width: '20%',
         sortField: 'status',
       },

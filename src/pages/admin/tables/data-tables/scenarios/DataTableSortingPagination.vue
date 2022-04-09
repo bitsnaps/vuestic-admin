@@ -1,5 +1,5 @@
 <template>
-  <va-card :title="$t('tables.sortingPaginationActionsAsIcons')">
+  <va-card :title="$t('app.tables.sortingPaginationActionsAsIcons')">
     <va-data-table
       :fields="fields"
       :data="users"

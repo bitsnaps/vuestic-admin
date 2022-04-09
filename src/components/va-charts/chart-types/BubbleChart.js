@@ -1,6 +1,9 @@
 import { Bubble } from 'vue-chartjs'
-import chartMixin from './chartMixin'
+// import chartMixin from './chartMixin'
 
 export default {
-  mixins: [Bubble, chartMixin],
+  mixins: [
+    Bubble,
+    // chartMixin
+  ],
 }

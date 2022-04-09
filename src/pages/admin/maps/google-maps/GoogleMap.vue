@@ -9,7 +9,8 @@ export default {
   name: 'google-map',
 
   mounted () {
-    if (!process.env.VUE_APP_GOOGLE_MAPS_API_KEY) {
+    // if (!process.env.VUE_APP_GOOGLE_MAPS_API_KEY) {
+    if (!import.meta.env.VUE_APP_GOOGLE_MAPS_API_KEY) {
       throw new Error('Please provide google maps api key from env (VUE_APP_GOOGLE_MAPS_API_KEY)')
     }
 

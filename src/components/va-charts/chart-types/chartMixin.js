@@ -1,10 +1,10 @@
-import { mixins } from 'vue-chartjs'
+// import { mixins } from 'vue-chartjs'
 import { defaultConfig } from '../VaChartConfigs'
 import { h as createElement } from 'vue'
 
 export default {
   name: 'VaChart',
-  mixins: [mixins.reactiveProp],
+  // mixins: [mixins.reactiveProp],
   props: ['data', 'chartOptions'],
   mounted () {
     this.refresh()
@@ -36,17 +36,17 @@ export default {
       return Object.assign({}, defaultConfig, this.chartOptions)
     },
   },
-  
+
   /**
    * Fix for vue3. Wait for vue-chartjs package will fix this.
-   * 
+   *
    * Problem: they use old vue2 style in their mixin:
    * ```vue
    *  render: function(h) {
    *    return h('div')
    *  }
    * ```
-   * 
+   *
    * In vue3 we need to use `createElement` from 'vue' package.
    */
   render: function () {

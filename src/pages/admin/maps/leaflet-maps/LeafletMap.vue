@@ -11,7 +11,8 @@ export default {
   name: 'leaflet-map',
 
   mounted () {
-    Leaflet.Icon.Default.imagePath = process.env.BASE_URL + 'img/vendor/leaflet/'
+    // Leaflet.Icon.Default.imagePath = process.env.BASE_URL + 'img/vendor/leaflet/'
+    Leaflet.Icon.Default.imagePath = import.meta.env.BASE_URL + 'img/vendor/leaflet/'
 
     const map = Leaflet.map(this.$el).setView([51.505, -0.09], 13)
 

@@ -1,7 +1,7 @@
 <template>
   <va-card
     class="colorful-bars progress-bar-widget"
-    :title="$t('progressBars.colors')"
+    :title="$t('app.progressBars.colors')"
   >
     <va-card-content class="row">
       <div v-for="n in 6" :key="`pb-${n}`" class="flex md4 xs12">

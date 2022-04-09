@@ -9,12 +9,12 @@
 </template>
 
 <script>
-import PieChart from './chart-types/PieChart'
-import BubbleChart from './chart-types/BubbleChart'
-import DonutChart from './chart-types/DonutChart'
+// import PieChart from './chart-types/PieChart'
+// import BubbleChart from './chart-types/BubbleChart'
+// import DonutChart from './chart-types/DonutChart'
 import HorizontalBarChart from './chart-types/HorizontalBarChart'
-import VerticalBarChart from './chart-types/VerticalBarChart'
-import LineChart from './chart-types/LineChart'
+// import VerticalBarChart from './chart-types/VerticalBarChart'
+// import LineChart from './chart-types/LineChart'
 import { chartTypesMap } from './VaChartConfigs'
 
 export default {
@@ -29,12 +29,12 @@ export default {
     },
   },
   components: {
-    PieChart,
-    LineChart,
-    VerticalBarChart,
+    // PieChart,
+    // LineChart,
+    // VerticalBarChart,
     HorizontalBarChart,
-    DonutChart,
-    BubbleChart,
+    // DonutChart,
+    // BubbleChart,
   },
   computed: {
     chartComponent () {

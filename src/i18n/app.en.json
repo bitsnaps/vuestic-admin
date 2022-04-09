@@ -392,7 +392,7 @@
       "modalText": "File type is incorrect!"
     },
     "chips": {
-      "chips": { 
+      "chips": {
       "title": "Chips",
       "primary": "Primary chip",
       "secondary": "Secondary chip",
@@ -403,7 +403,7 @@
       "gray": "Gray chip",
       "dark": "Dark chip"
       },
-      "badges": { 
+      "badges": {
       "title": "Badges",
       "primary": "Primary badge",
       "secondary": "Secondary badge",
@@ -451,7 +451,8 @@
     "progressBars": {
       "circle": "Circle",
       "horizontal": "Horizontal",
-      "colors": "Colors"
+      "colors": "Colors",
+      "state": "State"
     },
     "lists": {
       "customers": "Customers",
@@ -578,4 +579,3 @@
       "grow": "Tabs Grow"
     }
   }
-  

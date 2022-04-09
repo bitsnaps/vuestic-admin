@@ -1,7 +1,7 @@
 import { createStore } from 'vuex'
 
 export default createStore({
-  strict: true, // process.env.NODE_ENV !== 'production',
+  strict: import.meta.env.NODE_ENV !== 'production',
   state: {
     isSidebarMinimized: false,
     userName: 'Admin'

@@ -72,15 +72,15 @@ export default {
         dataClass: 'text-center',
       }, {
         name: 'fullName',
-        title: this.$t('tables.headings.name'),
+        title: this.$t('app.tables.headings.name'),
         width: '30%',
       }, {
         name: '__slot:status',
-        title: this.$t('tables.headings.status'),
+        title: this.$t('app.tables.headings.status'),
         width: '20%',
       }, {
         name: 'email',
-        title: this.$t('tables.headings.email'),
+        title: this.$t('app.tables.headings.email'),
         width: '30%',
       }, {
         name: '__slot:actions',

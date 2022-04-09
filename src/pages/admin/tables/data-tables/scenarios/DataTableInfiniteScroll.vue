@@ -51,13 +51,13 @@ export default {
         dataClass: 'text-center',
       }, {
         name: 'fullName',
-        title: this.$t('tables.headings.name'),
+        title: this.$t('app.tables.headings.name'),
       }, {
         name: 'email',
-        title: this.$t('tables.headings.email'),
+        title: this.$t('app.tables.headings.email'),
       }, {
         name: 'country',
-        title: this.$t('tables.headings.country'),
+        title: this.$t('app.tables.headings.country'),
       }]
     },
   },
