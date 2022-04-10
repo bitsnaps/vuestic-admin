@@ -8,6 +8,9 @@
 This branch uses Vite, TypeScript and Vue3, so the build experience is really fast.
 </p>
 
+[![Open in GitPod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)
+
+
 ## Known issues in this branch:
 - The `epic-spinners` package is not fully compatible with Vue3 yet... so it's not included here.
 -  You can't import json files using `require` in your code because this requires to include some plugins (e.g. `vite-plugin-commonjs`...), and this may cause some build issues, as an alternative you can import/export TypeScript object module instead of json.
