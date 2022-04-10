@@ -9,7 +9,7 @@
 </template>
 
 <script>
-// import PieChart from './chart-types/PieChart'
+import PieChart from './chart-types/PieChart'
 // import BubbleChart from './chart-types/BubbleChart'
 // import DonutChart from './chart-types/DonutChart'
 import HorizontalBarChart from './chart-types/HorizontalBarChart'
@@ -29,7 +29,7 @@ export default {
     },
   },
   components: {
-    // PieChart,
+    PieChart,
     // LineChart,
     // VerticalBarChart,
     HorizontalBarChart,
