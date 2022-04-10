@@ -1,19 +1,17 @@
-<p>
-This branch uses Vite, TypeScript and Vue3, so the build experience is really fast.
-</p>
-<p>some known issues are:</p>
-<ul>
-  <li>The `epic-spinners` dependency fully compatible with Vue3 yet... so it's not included here.</li>
-  <li>You can't import json files using `require` in your code because this requires to include some plugins (e.g. `vite-plugin-commonjs`...), and this cause build issues, as an alternative we import TypeScript object module instead of json.</li>
-  <li>There no `mixins` in `vue-chartjs`, (checkout [vue-chartjs](https://www.npmjs.com/package/vue-chartjs) for more details.)</li>
-</ul>
-
-
 <p align="center">
   <a href="https://vuestic.dev" target="_blank">
     <img alt="Vuestic UI Logo" width="500" src="./public/img/vuestic-admin-logo.png">
   </a>
 </p>
+
+<p>
+This branch uses Vite, TypeScript and Vue3, so the build experience is really fast.
+</p>
+
+## Known issues in this branch:
+- The `epic-spinners` package is not fully compatible with Vue3 yet... so it's not included here.
+-  You can't import json files using `require` in your code because this requires to include some plugins (e.g. `vite-plugin-commonjs`...), and this may cause some build issues, as an alternative you can import/export TypeScript object module instead of json.
+- There no `mixins` in `vue-chartjs`, checkout [vue-chartjs](https://www.npmjs.com/package/vue-chartjs) for more details.)
 
 <p align="center">
   Free and beautiful Vue.js admin template with 44+ custom UI components.</br>
@@ -81,8 +79,10 @@ Then, if you use npm:
 ```
 $ npm install
 
-# serve with hot reload at localhost:8080 by default.
+# serve with hot reload at localhost:3000 by default.
 $ npm run serve
+# or
+$ npm run dev
 
 # build for production
 $ npm run build
@@ -90,14 +90,32 @@ $ npm run build
 # build for production and view the bundle analyzer report.
 $ npm run build --report
 ```
+If you use pnpm:
+
+```
+$ pnpm install
+
+# serve with hot reload at localhost:3000 by default.
+$ pnpm serve
+# or:
+$ pnpm dev
+
+# build for production
+$ pnpm build
+
+# build for production and view the bundle analyzer report.
+$ pnpm build --report
+```
 
 If you use yarn:
 
 ```
 $ yarn install
 
-# serve with hot reload at localhost:8080 by default.
+# serve with hot reload at localhost:3000 by default.
 $ yarn serve
+# or
+$ yarn dev
 
 # build for production
 $ yarn build
@@ -127,8 +145,7 @@ $ yarn build --report
 [toasts](https://vuestic.epicmax.co/admin/ui/notifications) |
 [tooltips](https://vuestic.epicmax.co/admin/ui/popovers) |
 [popovers](https://vuestic.epicmax.co/admin/ui/popovers) |
-[icons](https://vuestic.epicmax.co/admin/ui/icons/) |
-[spinners](https://vuestic.epicmax.co/admin/ui/spinners) |
+[icons](https://vuestic.epicmax.co/admin/ui/icons/) |<!-- Not compatible with Vue v3 yet: [spinners](https://vuestic.epicmax.co/admin/ui/spinners)| -->
 [modals](https://vuestic.epicmax.co/admin/ui/modals) |
 [file upload](https://vuestic.epicmax.co/admin/ui/file-upload) |
 [chips](https://vuestic.epicmax.co/admin/ui/chips) |
@@ -143,7 +160,7 @@ $ yarn build --report
 [404 pages templates](https://vuestic.epicmax.co/admin/pages/404-pages) |
 [i18n](https://vuestic.epicmax.co/admin/dashboard)
 
-### Browser Support
+### Browser Support (not tested with Vite yet)
 
 We design Vuestic Admin to support the latest modern web browsers.
 
