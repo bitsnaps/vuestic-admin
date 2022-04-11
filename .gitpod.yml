@@ -5,5 +5,10 @@ ports:
   onOpen: open-preview
 
 tasks:
-  - init: pnpm install
-  - command: pnpm dev
+  - before: >
+      npm install -g pnpm
+  - init: |
+      pnpm install
+    command: |
+      pnpm dev
+  - command: gp await-port 3000 && gp preview "$(gp url 3000)/"
