@@ -18,7 +18,7 @@
       </div>
 
       <div class="flex xs12">
-        <!-- <va-card class="larger-padding">
+        <va-card class="larger-padding">
           <va-card-title>{{$t('app.buttons.size')}}</va-card-title>
           <va-card-content class="row">
             <div class="flex">
@@ -27,11 +27,11 @@
               <va-button class="mr-2 mb-2" size="large"> {{ $t('app.buttons.large') }}</va-button>
             </div>
           </va-card-content>
-        </va-card> -->
+        </va-card>
       </div>
 
       <div class="flex xs12">
-        <!-- <va-card class="larger-padding">
+        <va-card class="larger-padding">
           <va-card-title>{{$t('app.buttons.tags')}}</va-card-title>
           <va-card-content class="row">
             <div class="flex">
@@ -50,11 +50,11 @@
               </va-button>
             </div>
           </va-card-content>
-        </va-card> -->
+        </va-card>
       </div>
 
       <div class="flex xs12">
-        <!-- <va-card class="larger-padding">
+        <va-card class="larger-padding">
           <va-card-title>{{$t('app.buttons.advanced')}}</va-card-title>
           <va-card-content class="row">
             <div class="flex">
@@ -69,11 +69,11 @@
               <va-button class="mr-2 mb-2" icon="ion_md_close"/>
             </div>
           </va-card-content>
-        </va-card> -->
+        </va-card>
       </div>
 
       <div class="flex xs12">
-        <!-- <va-card class="larger-padding">
+        <va-card class="larger-padding">
           <va-card-title>{{$t('app.buttons.colors')}}</va-card-title>
           <va-card-content>
             <div class="row">
@@ -107,11 +107,11 @@
               </div>
             </div>
           </va-card-content>
-        </va-card> -->
+        </va-card>
       </div>
 
       <div class="flex xs12">
-        <!-- <va-card class="larger-padding">
+        <va-card class="larger-padding">
           <va-card-title>{{$t('app.buttons.buttonGroups')}}</va-card-title>
           <va-card-content>
             <div class="row">
@@ -160,11 +160,11 @@
               </div>
             </div>
           </va-card-content>
-        </va-card> -->
+        </va-card>
       </div>
 
       <div class="flex xs12">
-        <!-- <va-card class="larger-padding">
+        <va-card class="larger-padding">
           <va-card-title>{{$t('app.buttons.buttonToggles')}}</va-card-title>
           <va-card-content>
             <div class="row">
@@ -215,11 +215,11 @@
               </div>
             </div>
           </va-card-content>
-        </va-card> -->
+        </va-card>
       </div>
 
       <div class="flex xs12">
-        <!-- <va-card class="larger-padding">
+        <va-card class="larger-padding">
           <va-card-title>{{$t('app.buttons.pagination')}}</va-card-title>
           <va-card-content>
             <div class="row">
@@ -256,10 +256,10 @@
               </div>
             </div>
           </va-card-content>
-        </va-card> -->
+        </va-card>
       </div>
       <div class="flex xs12">
-        <!-- <va-card class="larger-padding">
+        <va-card class="larger-padding">
           <va-card-title>{{$t('app.buttons.buttonsDropdown')}}</va-card-title>
           <va-card-content>
             <div class="row">
@@ -292,7 +292,7 @@
               </div>
             </div>
           </va-card-content>
-        </va-card> -->
+        </va-card>
       </div>
     </div>
   </div>
